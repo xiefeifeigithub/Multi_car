@@ -1,14 +1,15 @@
 /*
  * main.c
  *
- *  Created on: 2018年5月11日
- *      Author: Lab
+ *  Created on: 2019年6月1日
+ *      Author: biaogexf
  */
  
  
  
-#define MANUAL_MODE 0
-#define AUTOMATIC_MODE 1
+#define MANUAL_MODE 'b'   //蓝牙
+#define AUTOMATIC_MODE 'c'  //避障
+#define SENSOR_MODE 'h'  //循迹
 
 
 #include "xparameters.h"
@@ -22,21 +23,27 @@
 #include "stdio.h"
 #include "stdlib.h"
 
+#include "xuartlite.h"
+#include "xuartlite_l.h"
+
 #include "macros.h"
 #include "cmd.h"
 #include "pwm.h"
 #include "xil_printf.h"
 #include "ult.h"
 
+
+
 int main()
 {
-//int mode = AUTOMATIC_MODE;
+char mode = 'c';
 int fsm = 0;
 u16 cmd = 1;
 int i=0;
-int num1 = 0;
-int num2 = 0;
-int num3 = 0;
+int num1 = 0;  //红外1
+int num2 = 0;  //红外2
+int num3 = 0;  //红外3
+
 double *wav0 = (double *)malloc(sizeof(double)); *wav0 = 0;
 double *wav1 = (double *)malloc(sizeof(double)); *wav1 = 0;
 
@@ -50,73 +57,132 @@ Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+16,0);
 
 //Ultrasonic Initiation
 zrcar_ultra_init();
-float *ult_data = (float*)malloc(sizeof(float)); *ult_data = 0;
-float *ult_data1 = (float*)malloc(sizeof(float)); *ult_data1 = 0;
+float *ult_data_0 = (float*)malloc(sizeof(float)); *ult_data_0 = 0;
+float *ult_data_1 = (float*)malloc(sizeof(float)); *ult_data_1 = 0;
 while(1){
-//	//Variable Initiation
-//	move = 0;
-//
-//
+	//Variable Initiation
+
+	//通过蓝牙接收控制模式
 //	mode=XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
 //	printf("%c",mode);
-//	switch(mode)
+
+
+
+	if(mode=='w' || mode =='a' || mode =='s' || mode=='d' || mode=='q')  //蓝牙模式
+	{
+		switch(mode)
+		{
+		case 'w': cmd = START_UP; break;
+		case 'a': cmd = TURN_RIGHT; break;
+		case 's': cmd = BACK_UP; break;
+		case 'q': cmd = SHUT_DOWN; break;
+		}
+	}else if( mode=='h' )  //红外
+	{
+		//红外循迹代码
+		num1 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR) & 0x000f;
+		printf("%d\n", num1);
+		num2 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR+4) & 0x000f;
+		printf("%d\n", num2);
+		num3 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR+8) & 0x000f ;
+		printf("%d\n", num3);
+		//特殊情况
+		if(num2==1 && num1==1 && num2==1)
+		{
+			cmd = START_UP;
+			goto LOOP;
+		}
+		if(num1==0 && num2==0)
+		{
+			cmd = TURN_LEFT;
+			goto LOOP;
+		}
+		if(num3==0 && num2==0)
+		{
+			cmd = TURN_RIGHT;
+			goto LOOP;
+		}
+		if(num1==0 && num2==0 && num3==0)
+		{
+			cmd = TURN_AROUND;
+			goto LOOP;
+		}
+		//一般情况
+		if(num3==0)
+		{
+			cmd = TURN_RIGHT;
+			goto LOOP;
+		}
+		else if(num1==0)
+		{
+			cmd = TURN_LEFT;
+			goto LOOP;
+		}
+		else
+		{
+			cmd = START_UP;
+			goto LOOP;
+		}
+	}
+	else{  //避障功能
+		cmd = SHUT_DOWN;
+		//Every 222 ticks get an ultra data
+		if(i % 222 == 1){
+			zrcar_ultra_get_all_0(ult_data_0);
+			printf("%f mm1\n",*ult_data_0);
+			zrcar_ultra_get_all_1(ult_data_1);
+			printf("%f mm2\n",*ult_data_1);
+		}
+	}
+
+
+//    //红外循迹代码
+//	num1 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR) & 0x000f;
+//	printf("%d\n", num1);
+//	num2 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR+4) & 0x000f;
+//	printf("%d\n", num2);
+//	num3 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR+8) & 0x000f ;
+//	printf("%d\n", num3);
+//	//特殊情况
+//	if(num2==1 && num1==1 && num2==1)
 //	{
-//		case 'm':cmd=0;break;
-//		case 'a':mode=6;break; //前进
-//		case 's':mode=9;break; //后退
-//		case '3':mode=2;break; //左转
-//		case '4':mode=4;break; //右转
-//		default:mode=10;break;
+//		cmd = START_UP;
+//		goto LOOP;
 //	}
-	//usleep(1000);    //delay lms
+//	if(num1==0 && num2==0)
+//	{
+//		cmd = TURN_LEFT;
+//		goto LOOP;
+//	}
+//	if(num3==0 && num2==0)
+//	{
+//		cmd = TURN_RIGHT;
+//		goto LOOP;
+//	}
+//	if(num1==0 && num2==0 && num3==0)
+//	{
+//		cmd = TURN_AROUND;
+//		goto LOOP;
+//	}
+//    //一般情况
+//	if(num3==0)
+//	{
+//		cmd = TURN_RIGHT;
+//		goto LOOP;
+//	}
+//	else if(num1==0)
+//	{
+//		cmd = TURN_LEFT;
+//		goto LOOP;
+//	}
+//	else
+//	{
+//		cmd = START_UP;
+//		goto LOOP;
+//	}
 
-	num1 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR) & 0x000f;
-	printf("%d\n", num1);
-
-	num2 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR+4) & 0x000f;
-	printf("%d\n", num2);
-
-	num3 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR+8) & 0x000f ;
-	printf("%d\n", num3);
-
-	if(num2==1 && num1==1 && num2==1)
-	{
-		cmd = START_UP;
-		goto LOOP;
-	}
-	if(num1==0 && num2==0)
-	{
-		cmd = TURN_LEFT;
-		goto LOOP;
-	}
-	if(num3==0 && num2==0)
-	{
-		cmd = TURN_RIGHT;
-		goto LOOP;
-	}
-	if(num1==0 && num2==0 && num3==0)
-	{
-		cmd = TURN_AROUND;
-		goto LOOP;
-	}
-
-	if(num3==0)
-	{
-		cmd = TURN_RIGHT;
-	}
-	else if(num1==0)
-	{
-		cmd = TURN_LEFT;
-	}
-	else
-	{
-		cmd = START_UP;
-	}
 
 	LOOP:
-
-
-
 	//Finite State Machine(fsm) for car move state
 	switch(cmd & 0x000f){
 	case START_UP:
@@ -184,6 +250,13 @@ while(1){
 	//Update electrical speed
 	update_speed(wav0,wav1);
 	
+	i++;
+	if(i>100000){
+		//Reset in order to avoid overstep the Integer boundary
+		i = 0;
+	}
+	//usleep(1000);//Reserve for time delay 1ms
+
   }
 
    return 0;
