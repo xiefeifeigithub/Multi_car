@@ -1,0 +1,19 @@
+10:08:27 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+10:08:30 INFO  : Processing command line option -hwspec C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper.hdf.
+10:08:31 INFO  : XSDB server has started successfully.
+11:19:15 INFO  : Invoking Bootgen: bootgen -image Multi_car.bif -o C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\Multi_car\bootimage\BOOT.bin
+11:19:15 INFO  : Creating new bif file C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\Multi_car\bootimage\Multi_car.bif
+11:19:16 INFO  : Bootgen command execution is done.
+11:24:32 ERROR : Unable to load properties file .sdkproject for project fsbl_zynq_bsp.
+11:24:32 ERROR : Unable to load properties file .sdkproject for project fsbl_zynq_bsp.
+11:29:59 INFO  : Invoking Bootgen: bootgen -image Multi_car.bif -o C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\Multi_car\bootimage\BOOT.bin -w on
+11:30:00 INFO  : Bootgen command execution is done.
+14:20:02 INFO  : Invoking Bootgen: bootgen -image Multi_car.bif -o C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\Multi_car\bootimage\BOOT.bin -w on
+14:20:03 INFO  : Bootgen command execution is done.
+14:37:53 INFO  : Invoking Bootgen: bootgen -image Multi_car.bif -o C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\Multi_car\bootimage\BOOT.bin -w on
+14:37:54 INFO  : Bootgen command execution is done.
+15:06:59 INFO  : Invoking Bootgen: bootgen -image Multi_car.bif -o C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\Multi_car\bootimage\BOOT.bin -w on
+15:07:01 INFO  : Bootgen command execution is done.
+15:45:27 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:51:20 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+15:51:24 INFO  : XSDB server has started successfully.
