@@ -40,6 +40,7 @@ int zrcar_ultra_init();
 *****************************************************************************/
 int zrcar_ultra_get_all_0(float *val);
 int zrcar_ultra_get_all_1(float *val);
+int zrcar_ultra_get_all_2(float *val);
 
 #endif /* ULT_H_ */
 

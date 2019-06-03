@@ -42,14 +42,14 @@ int zrcar_ultra_get_all_1(float *val)
 	return XST_SUCCESS;
 }
 
-////获取超声波传感器计算得到的距离数据到val指针中
-//int zrcar_ultra_get_all_2(float *val)
-//{
-//	Xil_Out32(ULTRASONIC_BASEADDR, 1);  //trig信号 slv_reg0[0]
-//
-//	while(!(Xil_In32(ULTRASONIC_BASEADDR) & 4));  //done_1信号  slv_reg0[2][
-//
-//	*val = (float) Xil_In32(ULTRASONIC_BASEADDR + 8) * ULTRASONIC_PARAM;  //value[1] -- slv_reg2
-//
-//	return XST_SUCCESS;
-//}
+//获取超声波传感器计算得到的距离数据到val指针中
+int zrcar_ultra_get_all_2(float *val)
+{
+	Xil_Out32(ULTRASONIC_BASEADDR, 1);  //trig信号 slv_reg0[0]
+
+	while(!(Xil_In32(ULTRASONIC_BASEADDR) & 8));  //done_1信号  slv_reg0[2][
+
+	*val = (float) Xil_In32(ULTRASONIC_BASEADDR + 12) * ULTRASONIC_PARAM;  //value[2] -- slv_reg3
+
+	return XST_SUCCESS;
+}

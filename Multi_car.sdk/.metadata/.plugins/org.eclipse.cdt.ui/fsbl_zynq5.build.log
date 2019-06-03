@@ -1,5 +1,10 @@
-22:51:10 **** Auto Build of configuration Debug for project fsbl_zynq5 ****
+21:20:14 **** Build of configuration Debug for project fsbl_zynq5 ****
 make all 
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -I../../fsbl_zynq5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
 'Building file: ../src/fsbl_hooks.c'
 'Invoking: ARM gcc compiler'
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../fsbl_zynq5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
@@ -14,6 +19,11 @@ arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\xiefe\Desktop\Multi_car\Multi_car.
 'Invoking: ARM gcc compiler'
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../fsbl_zynq5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
 'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../fsbl_zynq5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
 ' '
 'Building file: ../src/nand.c'
 'Invoking: ARM gcc compiler'
@@ -62,5 +72,5 @@ arm-xilinx-eabi-size fsbl_zynq5.elf  |tee "fsbl_zynq5.elf.size"
 'Finished building: fsbl_zynq5.elf.size'
 ' '
 
-22:51:15 Build Finished (took 4s.863ms)
+21:20:22 Build Finished (took 7s.639ms)
 

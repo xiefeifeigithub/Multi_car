@@ -1,4 +1,4 @@
-22:52:52 **** Auto Build of configuration Debug for project Multi_car ****
+22:33:20 **** Auto Build of configuration Debug for project Multi_car ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: ARM gcc compiler'
@@ -13,9 +13,9 @@ arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Multi_car_bsp/ps7_corte
 'Invoking: ARM Print Size'
 arm-xilinx-eabi-size Multi_car.elf  |tee "Multi_car.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  64012	   2320	  22652	  88984	  15b98	Multi_car.elf
+  64604	   2320	  22652	  89576	  15de8	Multi_car.elf
 'Finished building: Multi_car.elf.size'
 ' '
 
-22:52:54 Build Finished (took 1s.312ms)
+22:33:21 Build Finished (took 1s.55ms)
 

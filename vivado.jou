@@ -2,11 +2,54 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Sat Jun 01 21:49:53 2019
-# Process ID: 10548
+# Start of session at: Mon Jun 03 14:34:18 2019
+# Process ID: 10356
 # Log file: C:/Users/xiefe/Desktop/Multi_car/vivado.log
 # Journal file: C:/Users/xiefe/Desktop/Multi_car\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/xiefe/Desktop/Multi_car/Multi_car.xpr
-open_bd_design {C:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/design_1.bd}
+open_run synth_1 -name synth_1
+startgroup
+set_property package_pin "" [get_ports [list  {dir_out[2]}]]
+place_ports in1 T15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {dir_out[3]}]]
+place_ports in2 R16
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {PWM_o[1]}]]
+place_ports in3 U17
+endgroup
+place_ports in4 N17
+place_ports {echo[0]} U10
+place_ports {echo[1]} T5
+place_ports {echo[0]} V11
+set_property package_pin "" [get_ports [list  {PWM_o[1]}]]
+startgroup
+set_property package_pin "" [get_ports [list  UART_rxd]]
+place_ports {PWM_o[1]} V17
+endgroup
+place_ports {dir_out[0]} V13
+place_ports {dir_out[1]} V15
+startgroup
+set_property package_pin "" [get_ports [list  UART_txd]]
+place_ports {dir_out[2]} V18
+endgroup
+place_ports {dir_out[3]} T16
+place_ports UART_rxd P18
+place_ports UART_txd R17
+place_ports {echo[2]} U10
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+file copy -force C:/Users/xiefe/Desktop/Multi_car/Multi_car.runs/impl_1/design_1_wrapper.sysdef C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk -hwspec C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper.hdf

@@ -1,0 +1,80 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 12548
+
+Current time: 	6/3/19 2:33:10 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	xiefe
+User directory: C:/Users/xiefe/Desktop/Multi_car
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/xiefe/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/xiefe/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	125 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 352 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 55) elapsed time: 4s
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\xiefe\Desktop\Multi_car\Multi_car.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/xiefe/Desktop/Multi_car/Multi_car.xpr 
+// [GUI Memory]: 43 MB (+42580kb) [00:00:12]
+// [Engine Memory]: 332 MB (+196708kb) [00:00:12]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 387 MB. GUI used memory: 27 MB. Current time: 6/3/19 2:33:12 PM CST
+// [Engine Memory]: 387 MB (+39965kb) [00:00:17]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 47 MB (+2407kb) [00:00:20]
+// [Engine Memory]: 412 MB (+5613kb) [00:00:20]
+// [Engine Memory]: 453 MB (+21893kb) [00:00:21]
+// [GUI Memory]: 58 MB (+8180kb) [00:00:22]
+// [Engine Memory]: 479 MB (+3073kb) [00:00:23]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/xiefe/Desktop/Multi_car/Multi_car.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/Sensor-ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/pwmcar/ip_repo/pwm_car'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/pwmcar/ultrasonic_ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: Multi_car; location: C:/Users/xiefe/Desktop/Multi_car; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 706.613 ; gain = 155.566 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 509 MB (+7243kb) [00:00:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 514 MB. GUI used memory: 34 MB. Current time: 6/3/19 2:33:27 PM CST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1); // A:k (H:JPanel, cl:JFrame)
