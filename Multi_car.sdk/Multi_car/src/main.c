@@ -34,7 +34,7 @@
 
 int main()
 {
-char mode = SENSOR_MODE; //模式选择
+char mode = AUTOMATIC_MODE; //模式选择
 int fsm = 0;
 u16 cmd = 1;
 int i=0;
@@ -47,10 +47,10 @@ double *wav0 = (double *)malloc(sizeof(double)); *wav0 = 0;
 double *wav1 = (double *)malloc(sizeof(double)); *wav1 = 0;
 
 //PWM Initiation XPAR_PWM_CAR_V1_0_0_BASEADDR
-Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR,1000);   //pwm fre
-		Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+4,500); //pwm wav
-		Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+8,1000);  //pwm1 fre
-		Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+12,458);  //pwm1 wav
+Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR,FRE_THRES);   //pwm fre
+Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+4,WAV_THRES); //pwm wav
+Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+8,FRE_THRES);  //pwm1 fre
+Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+12,WAV_THRES);  //pwm1 wav
 
 Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+16,0);
 
@@ -64,7 +64,7 @@ while(1){
 	//Variable Initiation
 	//通过蓝牙接收控制模式
 //	mode=XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
-	printf("%c\n",mode);
+//	printf("%c\n",mode);
 
 
 	if(mode=='w' || mode =='a' || mode =='s' || mode=='d' || mode=='q')  //蓝牙模式
@@ -126,40 +126,65 @@ while(1){
 	else{  //避障功能
 		cmd = SHUT_DOWN;
 		//Every 222 ticks get an ultra data
-		if(i % 222 == 1){
+		if(i % 180 == 1){
 			zrcar_ultra_get_all_0(ult_data_0);  //右边
-			printf("%f mm0\n",*ult_data_0);
+			printf("%f mm0 右\n",*ult_data_0);
 			zrcar_ultra_get_all_1(ult_data_1);  //正面
-			printf("%f mm1\n",*ult_data_1);
+			printf("%f mm1正\n",*ult_data_1);
 			zrcar_ultra_get_all_2(ult_data_2);  //左边
-			printf("%f mm2\n",*ult_data_2);
+			printf("%f mm2左\n",*ult_data_2);
+
+			//*ult_data_0 > 1900
+			//带着正确的、正和右出去，沿着障碍物左边走
+
+//			printf("ok\n");
+//			printf("%f mm1正\n",*ult_data_1);
+//			printf("%f mm2左\n",*ult_data_2);
 		}
 
+
 //       超声波数据判断
-		if(*ult_data_1 < 222 )
-		{
-			cmd = TURN_AROUND;
-		}
-		else if( 222 < *ult_data_1 && 100 < *ult_data_0 && 100 < *ult_data_2) //前左右无障碍物 - 直走
-		{
-			cmd = START_UP;
-		}
-		else if( *ult_data_1 > 222 && *ult_data_0 < 150)  //靠近右边障碍物 - 左转
-		{
-			cmd = TURN_RIGHT;
-		}
-		else if( *ult_data_1 > 222  && *ult_data_2 < 100 )  //靠近左边障碍物 - 右转
-		{
-			cmd = TURN_LEFT;
-		}
-		else if(*ult_data_1 < 222 && *ult_data_0 < 150 &&  *ult_data_2 < 100)
-		{
-			cmd = TURN_AROUND;
-		}
-		else
-		{
-			cmd = START_UP;
-		}
+//		if( 222 < *ult_data_1 && 100 < *ult_data_0 && 100 < *ult_data_2) //前左右无障碍物 - 直走
+//		{
+//			cmd = START_UP;
+//			printf("go\n");
+//			printf("%f mm0 右\n",*ult_data_0);
+//			printf("%f mm1正\n",*ult_data_1);
+//			printf("%f mm2左\n",*ult_data_2);
+//		}
+//		else if( *ult_data_1 > 222 && *ult_data_0 < 150)  //靠近右边障碍物 - 左转
+//		{
+//			cmd = TURN_RIGHT;
+//			printf("right\n");
+//			printf("%f mm0 右\n",*ult_data_0);
+//			printf("%f mm1正\n",*ult_data_1);
+//			printf("%f mm2左\n",*ult_data_2);
+//		}
+//		else if( *ult_data_1 > 222  && *ult_data_2 < 100 )  //靠近左边障碍物 - 右转
+//		{
+//			cmd = TURN_LEFT;
+//			printf("left\n");
+//			printf("%f mm0 右\n",*ult_data_0);
+//			printf("%f mm1正\n",*ult_data_1);
+//			printf("%f mm2左\n",*ult_data_2);
+//		}
+//		else if(*ult_data_1 < 222 && *ult_data_0 < 150 &&  *ult_data_2 < 100)
+//		{
+//			cmd = TURN_AROUND;
+//			printf("around\n");
+//			printf("%f mm0 右\n",*ult_data_0);
+//			printf("%f mm1正\n",*ult_data_1);
+//			printf("%f mm2左\n",*ult_data_2);
+//		}
+//		else if(*ult_data_1 < 222 )
+//		{
+//			cmd = TURN_AROUND;
+//
+//		}
+//		else
+//		{
+//			cmd = START_UP;
+//		}
 
 	}
 
@@ -250,10 +275,10 @@ while(1){
 //	char num;
 //	int mode;
 //
-//	//设置PWM
-//		Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR,1000);   //pwm fre
+//	//设置PWM  占空比 = f/w (周期/脉宽)
+//		Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR,1500);   //pwm fre
 //		Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+4,500); //pwm wav
-//		Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+8,1000);  //pwm1 fre
+//		Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+8,1500);  //pwm1 fre
 //		Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+12,458);  //pwm1 wav
 //
 //	while(1){

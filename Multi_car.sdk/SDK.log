@@ -4135,3 +4135,1588 @@ con
 22:27:01 INFO  : Bootgen command execution is done.
 22:33:27 INFO  : Disconnected from the channel tcfchan#2.
 22:33:34 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:45:22 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+09:45:28 INFO  : XSDB server has started successfully.
+09:51:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:51:04 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:51:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:51:10 INFO  : 'fpga -state' command is executed.
+09:51:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:51:14 INFO  : Mermory regions for PS have been updated.
+09:51:14 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:51:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:51:15 INFO  : 'ps7_init' command is executed.
+09:51:15 INFO  : 'ps7_post_config' command is executed.
+09:51:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:51:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:51:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:51:16 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:51:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+09:51:16 INFO  : Memory regions updated for context APU
+09:51:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:51:16 INFO  : 'con' command is executed.
+09:51:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+09:52:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:52:14 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:52:34 INFO  : Disconnected from the channel tcfchan#1.
+09:52:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:52:35 INFO  : 'fpga -state' command is executed.
+09:52:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:52:39 INFO  : Mermory regions for PS have been updated.
+09:52:39 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:52:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:52:40 INFO  : 'ps7_init' command is executed.
+09:52:40 INFO  : 'ps7_post_config' command is executed.
+09:52:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:52:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:52:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:52:42 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:52:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+09:52:42 INFO  : Memory regions updated for context APU
+09:52:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:52:42 INFO  : 'con' command is executed.
+09:52:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+09:59:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:59:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:59:25 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:59:42 INFO  : Disconnected from the channel tcfchan#2.
+09:59:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:59:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:59:43 INFO  : 'fpga -state' command is executed.
+09:59:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:59:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:59:47 INFO  : Mermory regions for PS have been updated.
+09:59:47 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:59:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:59:48 INFO  : 'ps7_init' command is executed.
+09:59:48 INFO  : 'ps7_post_config' command is executed.
+09:59:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:59:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:59:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:59:49 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:59:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+09:59:49 INFO  : Memory regions updated for context APU
+09:59:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:59:49 INFO  : 'con' command is executed.
+09:59:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:02:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:02:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:02:29 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:02:36 INFO  : Disconnected from the channel tcfchan#3.
+10:02:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:02:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:02:36 INFO  : 'fpga -state' command is executed.
+10:02:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:02:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:02:40 INFO  : Mermory regions for PS have been updated.
+10:02:40 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:02:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:02:41 INFO  : 'ps7_init' command is executed.
+10:02:41 INFO  : 'ps7_post_config' command is executed.
+10:02:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:02:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:02:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:02:42 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:02:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+10:02:42 INFO  : Memory regions updated for context APU
+10:02:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:02:42 INFO  : 'con' command is executed.
+10:02:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:04:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:04:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:04:19 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:05:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:05:38 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:05:43 INFO  : Disconnected from the channel tcfchan#4.
+10:05:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:05:44 INFO  : 'fpga -state' command is executed.
+10:05:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:44 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:05:48 INFO  : Mermory regions for PS have been updated.
+10:05:48 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:05:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+----------------End of Script----------------
+
+10:05:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:05:54 INFO  : 'fpga -state' command is executed.
+10:05:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:05:58 INFO  : Mermory regions for PS have been updated.
+10:05:58 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:05:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:05:59 INFO  : 'ps7_init' command is executed.
+10:06:00 INFO  : 'ps7_post_config' command is executed.
+10:06:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:06:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:06:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:06:01 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:06:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+10:06:01 INFO  : Memory regions updated for context APU
+10:06:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:06:01 INFO  : 'con' command is executed.
+10:06:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:06:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:06:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:06:55 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:07:03 INFO  : Disconnected from the channel tcfchan#5.
+10:07:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:07:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:07:03 INFO  : 'fpga -state' command is executed.
+10:07:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:07:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:07:07 INFO  : Mermory regions for PS have been updated.
+10:07:07 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:07:08 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:07:08 INFO  : 'ps7_init' command is executed.
+10:07:08 INFO  : 'ps7_post_config' command is executed.
+10:07:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:07:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:07:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:07:09 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:07:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+10:07:09 INFO  : Memory regions updated for context APU
+10:07:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:07:10 INFO  : 'con' command is executed.
+10:07:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:10:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:10:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:10:21 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:10:26 INFO  : Disconnected from the channel tcfchan#6.
+10:10:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:10:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:10:27 INFO  : 'fpga -state' command is executed.
+10:10:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:10:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:10:31 INFO  : Mermory regions for PS have been updated.
+10:10:31 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:10:31 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:10:32 INFO  : 'ps7_init' command is executed.
+10:10:32 INFO  : 'ps7_post_config' command is executed.
+10:10:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:10:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:10:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:10:33 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:10:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+10:10:33 INFO  : Memory regions updated for context APU
+10:10:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:10:33 INFO  : 'con' command is executed.
+10:10:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:12:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:12:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:12:36 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:12:47 INFO  : Disconnected from the channel tcfchan#7.
+10:12:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:12:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:12:48 INFO  : 'fpga -state' command is executed.
+10:12:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:12:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:12:52 INFO  : Mermory regions for PS have been updated.
+10:12:52 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:12:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:12:53 INFO  : 'ps7_init' command is executed.
+10:12:53 INFO  : 'ps7_post_config' command is executed.
+10:12:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:12:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:12:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:12:54 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:12:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+10:12:54 INFO  : Memory regions updated for context APU
+10:12:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:12:54 INFO  : 'con' command is executed.
+10:12:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:15:19 INFO  : Invoking Bootgen: bootgen -image Multi_car.bif -o C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\Multi_car\bootimage\BOOT.bin -w on
+10:15:20 INFO  : Bootgen command execution is done.
+10:21:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:22:00 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:22:22 INFO  : Disconnected from the channel tcfchan#8.
+10:22:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:22:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:22:46 INFO  : 'fpga -state' command is executed.
+10:22:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:22:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:22:50 INFO  : Mermory regions for PS have been updated.
+10:22:50 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:22:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:22:51 INFO  : 'ps7_init' command is executed.
+10:22:51 INFO  : 'ps7_post_config' command is executed.
+10:22:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:22:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:22:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:22:52 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:22:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+10:22:52 INFO  : Memory regions updated for context APU
+10:22:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:22:53 INFO  : 'con' command is executed.
+10:22:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:28:17 INFO  : Invoking Bootgen: bootgen -image Multi_car.bif -o C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\Multi_car\bootimage\BOOT.bin -w on
+10:28:18 INFO  : Bootgen command execution is done.
+10:53:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:53:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:53:39 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:53:46 INFO  : Disconnected from the channel tcfchan#9.
+10:53:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:53:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:53:46 INFO  : 'fpga -state' command is executed.
+10:53:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:53:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:53:50 INFO  : Mermory regions for PS have been updated.
+10:53:50 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:53:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:53:51 INFO  : 'ps7_init' command is executed.
+10:53:51 INFO  : 'ps7_post_config' command is executed.
+10:53:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:53:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:53:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:53:52 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:53:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+10:53:52 INFO  : Memory regions updated for context APU
+10:53:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:53:53 INFO  : 'con' command is executed.
+10:53:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:05:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:05:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:05:56 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:06:11 INFO  : Disconnected from the channel tcfchan#10.
+11:06:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:06:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:06:11 INFO  : 'fpga -state' command is executed.
+11:06:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:06:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:06:15 INFO  : Mermory regions for PS have been updated.
+11:06:15 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:06:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:06:16 INFO  : 'ps7_init' command is executed.
+11:06:16 INFO  : 'ps7_post_config' command is executed.
+11:06:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:06:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:06:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:06:17 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:06:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+11:06:17 INFO  : Memory regions updated for context APU
+11:06:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:06:18 INFO  : 'con' command is executed.
+11:06:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:07:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:07:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:07:30 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:07:42 INFO  : Disconnected from the channel tcfchan#11.
+11:07:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:07:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:07:42 INFO  : 'fpga -state' command is executed.
+11:07:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:07:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:07:46 INFO  : Mermory regions for PS have been updated.
+11:07:46 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:07:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:07:47 INFO  : 'ps7_init' command is executed.
+11:07:47 INFO  : 'ps7_post_config' command is executed.
+11:07:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:07:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:07:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:07:48 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:07:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+11:07:48 INFO  : Memory regions updated for context APU
+11:07:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:07:49 INFO  : 'con' command is executed.
+11:07:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:10:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:10:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:10:46 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:11:01 INFO  : Disconnected from the channel tcfchan#12.
+11:11:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:11:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:11:02 INFO  : 'fpga -state' command is executed.
+11:11:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:11:02 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:11:06 INFO  : Mermory regions for PS have been updated.
+11:11:06 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:11:06 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:11:07 INFO  : 'ps7_init' command is executed.
+11:11:07 INFO  : 'ps7_post_config' command is executed.
+11:11:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:11:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:08 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:11:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+11:11:08 INFO  : Memory regions updated for context APU
+11:11:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:08 INFO  : 'con' command is executed.
+11:11:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:15:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:15:30 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:15:46 INFO  : Disconnected from the channel tcfchan#13.
+11:15:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:15:46 INFO  : 'fpga -state' command is executed.
+11:15:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:15:50 INFO  : Mermory regions for PS have been updated.
+11:15:51 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:15:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:15:51 INFO  : 'ps7_init' command is executed.
+11:15:51 INFO  : 'ps7_post_config' command is executed.
+11:15:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:15:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:52 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:15:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+11:15:52 INFO  : Memory regions updated for context APU
+11:15:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:53 INFO  : 'con' command is executed.
+11:15:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:20:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:20:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:20:48 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:21:06 INFO  : Disconnected from the channel tcfchan#14.
+11:21:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:21:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:21:17 INFO  : 'fpga -state' command is executed.
+11:21:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:21:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:21:21 INFO  : Mermory regions for PS have been updated.
+11:21:21 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:21:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:21:22 INFO  : 'ps7_init' command is executed.
+11:21:22 INFO  : 'ps7_post_config' command is executed.
+11:21:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:21:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:21:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:21:23 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:21:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+11:21:23 INFO  : Memory regions updated for context APU
+11:21:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:21:23 INFO  : 'con' command is executed.
+11:21:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:24:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:24:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:24:37 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:24:45 INFO  : Disconnected from the channel tcfchan#15.
+11:24:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:24:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:24:45 INFO  : 'fpga -state' command is executed.
+11:24:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:24:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:24:49 INFO  : Mermory regions for PS have been updated.
+11:24:49 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:24:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:24:50 INFO  : 'ps7_init' command is executed.
+11:24:50 INFO  : 'ps7_post_config' command is executed.
+11:24:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:24:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:51 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:24:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+11:24:51 INFO  : Memory regions updated for context APU
+11:24:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:51 INFO  : 'con' command is executed.
+11:24:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:36:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:36:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:36:35 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:36:42 INFO  : Disconnected from the channel tcfchan#16.
+11:36:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:36:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:36:42 INFO  : 'fpga -state' command is executed.
+11:36:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:36:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:36:46 INFO  : Mermory regions for PS have been updated.
+11:36:46 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:36:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:36:47 INFO  : 'ps7_init' command is executed.
+11:36:47 INFO  : 'ps7_post_config' command is executed.
+11:36:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:36:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:48 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:36:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+11:36:48 INFO  : Memory regions updated for context APU
+11:36:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:49 INFO  : 'con' command is executed.
+11:36:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:49:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:49:08 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:49:20 INFO  : Disconnected from the channel tcfchan#17.
+11:49:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:49:21 INFO  : 'fpga -state' command is executed.
+11:49:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:49:25 INFO  : Mermory regions for PS have been updated.
+11:49:25 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:49:25 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:49:26 INFO  : 'ps7_init' command is executed.
+11:49:26 INFO  : 'ps7_post_config' command is executed.
+11:49:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:49:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:27 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:49:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+11:49:27 INFO  : Memory regions updated for context APU
+11:49:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:27 INFO  : 'con' command is executed.
+11:49:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:50:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:50:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:50:38 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:51:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:51:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:51:14 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:51:25 INFO  : Disconnected from the channel tcfchan#18.
+11:51:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:51:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:51:25 INFO  : 'fpga -state' command is executed.
+11:51:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:51:26 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:51:29 INFO  : Mermory regions for PS have been updated.
+11:51:30 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:51:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:51:31 INFO  : 'ps7_init' command is executed.
+11:51:31 INFO  : 'ps7_post_config' command is executed.
+11:51:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:51:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:51:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:51:32 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:51:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+11:51:32 INFO  : Memory regions updated for context APU
+11:51:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:51:32 INFO  : 'con' command is executed.
+11:51:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:53:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:53:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:53:44 INFO  : FPGA configured successfully with bitstream "C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:53:58 INFO  : Disconnected from the channel tcfchan#19.
+11:53:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:53:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:53:58 INFO  : 'fpga -state' command is executed.
+11:53:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:53:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:54:02 INFO  : Mermory regions for PS have been updated.
+11:54:02 INFO  : Sourcing of 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:54:03 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:54:03 INFO  : 'ps7_init' command is executed.
+11:54:03 INFO  : 'ps7_post_config' command is executed.
+11:54:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:54:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:04 INFO  : The application 'C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:54:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136787456 -size 65536 -flags 3
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+source C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/Multi_car/Debug/Multi_car.elf
+----------------End of Script----------------
+
+11:54:04 INFO  : Memory regions updated for context APU
+11:54:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:05 INFO  : 'con' command is executed.
+11:54:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:54:46 INFO  : Disconnected from the channel tcfchan#20.
+11:54:50 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:55:28 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+11:55:31 INFO  : XSDB server has started successfully.

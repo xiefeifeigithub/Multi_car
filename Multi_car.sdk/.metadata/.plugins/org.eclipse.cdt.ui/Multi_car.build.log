@@ -1,21 +1,6 @@
-22:33:20 **** Auto Build of configuration Debug for project Multi_car ****
+11:53:55 **** Incremental Build of configuration Debug for project Multi_car ****
 make all 
-'Building file: ../src/main.c'
-'Invoking: ARM gcc compiler'
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Multi_car_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: Multi_car.elf'
-'Invoking: ARM gcc linker'
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Multi_car_bsp/ps7_cortexa9_0/lib -o "Multi_car.elf"  ./src/helloworld.o ./src/main.o ./src/platform.o ./src/pwm.o ./src/ult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: Multi_car.elf'
-' '
-'Invoking: ARM Print Size'
-arm-xilinx-eabi-size Multi_car.elf  |tee "Multi_car.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  64604	   2320	  22652	  89576	  15de8	Multi_car.elf
-'Finished building: Multi_car.elf.size'
-' '
+make: Nothing to be done for `all'.
 
-22:33:21 Build Finished (took 1s.55ms)
+11:53:55 Build Finished (took 235ms)
 

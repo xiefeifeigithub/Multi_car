@@ -20,51 +20,27 @@ clients =
 	{ client_name = "sdk"; 
 		rules = (
 			{
-				context="sdk\\\\bsp/1559570329995";
-				xml_map="sdk\\\\bsp/1559570329995";
-				html_map="sdk\\\\bsp/1559570329995";
+				context="sdk\\\\bsp/1559614439974";
+				xml_map="sdk\\\\bsp/1559614439974";
+				html_map="sdk\\\\bsp/1559614439974";
 				html_format="UnisimStatsStyle";
 			},
 			{
-				context="sdk\\\\application/1559570347531";
-				xml_map="sdk\\\\application/1559570347531";
-				html_map="sdk\\\\application/1559570347531";
+				context="sdk\\\\application/1559614459254";
+				xml_map="sdk\\\\application/1559614459254";
+				html_map="sdk\\\\application/1559614459254";
 				html_format="UnisimStatsStyle";
 			},
 			{
-				context="sdk\\\\bsp/1559570767868";
-				xml_map="sdk\\\\bsp/1559570767868";
-				html_map="sdk\\\\bsp/1559570767868";
+				context="sdk\\\\bsp/1559615029495";
+				xml_map="sdk\\\\bsp/1559615029495";
+				html_map="sdk\\\\bsp/1559615029495";
 				html_format="UnisimStatsStyle";
 			},
 			{
-				context="sdk\\\\application/1559570781915";
-				xml_map="sdk\\\\application/1559570781915";
-				html_map="sdk\\\\application/1559570781915";
-				html_format="UnisimStatsStyle";
-			},
-			{
-				context="sdk\\\\bsp/1559571313915";
-				xml_map="sdk\\\\bsp/1559571313915";
-				html_map="sdk\\\\bsp/1559571313915";
-				html_format="UnisimStatsStyle";
-			},
-			{
-				context="sdk\\\\application/1559571328265";
-				xml_map="sdk\\\\application/1559571328265";
-				html_map="sdk\\\\application/1559571328265";
-				html_format="UnisimStatsStyle";
-			},
-			{
-				context="sdk\\\\bsp/1559571942112";
-				xml_map="sdk\\\\bsp/1559571942112";
-				html_map="sdk\\\\bsp/1559571942112";
-				html_format="UnisimStatsStyle";
-			},
-			{
-				context="sdk\\\\application/1559571957264";
-				xml_map="sdk\\\\application/1559571957264";
-				html_map="sdk\\\\application/1559571957264";
+				context="sdk\\\\application/1559615045302";
+				xml_map="sdk\\\\application/1559615045302";
+				html_map="sdk\\\\application/1559615045302";
 				html_format="UnisimStatsStyle";
 			}
 		);
