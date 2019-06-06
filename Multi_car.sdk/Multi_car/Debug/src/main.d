@@ -16,7 +16,9 @@ src/main.o src/main.d: ../src/main.c \
  ../../Multi_car_bsp/ps7_cortexa9_0/include/xgpiops_hw.h \
  ../../Multi_car_bsp/ps7_cortexa9_0/include/xil_io.h \
  ../../Multi_car_bsp/ps7_cortexa9_0/include/xuartps.h \
- ../../Multi_car_bsp/ps7_cortexa9_0/include/xuartps_hw.h ../src/macros.h \
+ ../../Multi_car_bsp/ps7_cortexa9_0/include/xuartps_hw.h \
+ ../../Multi_car_bsp/ps7_cortexa9_0/include/xuartlite.h \
+ ../../Multi_car_bsp/ps7_cortexa9_0/include/xuartlite_l.h ../src/macros.h \
  ../src/cmd.h ../src/pwm.h \
  ../../Multi_car_bsp/ps7_cortexa9_0/include/xil_printf.h ../src/ult.h
 
@@ -55,6 +57,10 @@ src/main.o src/main.d: ../src/main.c \
 ../../Multi_car_bsp/ps7_cortexa9_0/include/xuartps.h:
 
 ../../Multi_car_bsp/ps7_cortexa9_0/include/xuartps_hw.h:
+
+../../Multi_car_bsp/ps7_cortexa9_0/include/xuartlite.h:
+
+../../Multi_car_bsp/ps7_cortexa9_0/include/xuartlite_l.h:
 
 ../src/macros.h:
 

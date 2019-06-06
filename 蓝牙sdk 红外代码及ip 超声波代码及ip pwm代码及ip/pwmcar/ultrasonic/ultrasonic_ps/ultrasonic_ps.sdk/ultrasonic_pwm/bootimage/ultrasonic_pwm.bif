@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\fsbl_zynq\Debug\fsbl_zynq.elf
+	C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit
+	C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\Debug\ultrasonic_pwm.elf
+}

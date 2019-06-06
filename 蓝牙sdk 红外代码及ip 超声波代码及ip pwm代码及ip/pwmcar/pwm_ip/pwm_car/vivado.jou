@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed May 29 14:20:55 2019
+# Process ID: 3044
+# Log file: C:/Users/bjut/Desktop/ip_repo/pwm_car/vivado.log
+# Journal file: C:/Users/bjut/Desktop/ip_repo/pwm_car\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bjut/Desktop/ip_repo/pwm_car/edit_pwm_car_v1_0.xpr

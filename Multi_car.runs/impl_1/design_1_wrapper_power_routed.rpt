@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date             : Sat Jun 01 10:03:37 2019
+| Date             : Mon Jun 03 14:57:35 2019
 | Host             : DESKTOP-BH9QR42 running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb
 | Design           : design_1_wrapper
@@ -31,7 +31,7 @@ Table of Contents
 
 +--------------------------+-------+
 | Total On-Chip Power (W)  | 1.424 |
-| Dynamic (W)              | 1.273 |
+| Dynamic (W)              | 1.272 |
 | Device Static (W)        | 0.152 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 68.6  |
@@ -49,15 +49,15 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.010 |        3 |       --- |             --- |
+| Clocks                  |     0.009 |        3 |       --- |             --- |
 | Slice Logic             |     0.003 |     4813 |       --- |             --- |
-|   LUT as Logic          |     0.002 |     1948 |     53200 |            3.66 |
+|   LUT as Logic          |     0.002 |     1947 |     53200 |            3.66 |
 |   Register              |    <0.001 |     1971 |    106400 |            1.85 |
 |   CARRY4                |    <0.001 |      103 |     13300 |            0.77 |
 |   F7/F8 Muxes           |    <0.001 |       65 |     53200 |            0.12 |
 |   LUT as Shift Register |    <0.001 |       74 |     17400 |            0.43 |
 |   Others                |     0.000 |      264 |       --- |             --- |
-| Signals                 |     0.003 |     3061 |       --- |             --- |
+| Signals                 |     0.003 |     3059 |       --- |             --- |
 | I/O                     |     0.001 |       16 |       125 |           12.80 |
 | PS7                     |     1.256 |        1 |       --- |             --- |
 | Static Power            |     0.152 |          |           |                 |
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.029 |       0.015 |      0.013 |
+| Vccint    |       1.000 |     0.028 |       0.015 |      0.013 |
 | Vccaux    |       1.800 |     0.020 |       0.000 |      0.020 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -147,7 +147,7 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| design_1_wrapper                                 |     1.273 |
+| design_1_wrapper                                 |     1.272 |
 |   design_1_i                                     |     1.271 |
 |     Sensor_v1_0_0                                |     0.002 |
 |       inst                                       |     0.002 |
@@ -174,7 +174,7 @@ Table of Contents
 |                 DYNSHREG_F_I                     |    <0.001 |
 |     processing_system7_0                         |     1.257 |
 |       inst                                       |     1.257 |
-|     processing_system7_0_axi_periph              |     0.006 |
+|     processing_system7_0_axi_periph              |     0.005 |
 |       s00_couplers                               |     0.005 |
 |         auto_pc                                  |     0.005 |
 |           inst                                   |     0.005 |
@@ -208,9 +208,9 @@ Table of Contents
 |             reg_slice_r                          |    <0.001 |
 |             splitter_ar                          |    <0.001 |
 |             splitter_aw                          |    <0.001 |
-|     pwm_car_v1_0_0                               |     0.003 |
-|       inst                                       |     0.003 |
-|         pwm_car_v1_0_S00_AXI_inst                |     0.003 |
+|     pwm_car_v1_0_0                               |     0.002 |
+|       inst                                       |     0.002 |
+|         pwm_car_v1_0_S00_AXI_inst                |     0.002 |
 |           u1                                     |    <0.001 |
 |           u2                                     |    <0.001 |
 |           u3                                     |    <0.001 |

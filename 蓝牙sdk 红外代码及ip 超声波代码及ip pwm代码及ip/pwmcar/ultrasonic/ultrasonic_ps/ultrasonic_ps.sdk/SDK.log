@@ -1,0 +1,2334 @@
+15:39:38 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+15:39:52 INFO  : XSDB server has started successfully.
+15:39:59 INFO  : Processing command line option -hwspec C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper.hdf.
+15:55:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:55:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+15:55:51 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:56:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:56:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+15:56:06 INFO  : 'fpga -state' command is executed.
+15:56:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:56:06 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+15:56:10 INFO  : Mermory regions for PS have been updated.
+15:56:10 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:56:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+15:56:10 INFO  : 'ps7_init' command is executed.
+15:56:11 INFO  : 'ps7_post_config' command is executed.
+15:56:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:56:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:56:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:56:12 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:56:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+15:56:12 INFO  : Memory regions updated for context APU
+15:56:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:56:12 INFO  : 'con' command is executed.
+15:56:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+16:01:52 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin
+16:01:52 INFO  : Creating new bif file C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\ultrasonic_pwm.bif
+16:01:53 INFO  : Bootgen command execution is done.
+16:29:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:29:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:29:16 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:29:24 INFO  : Disconnected from the channel tcfchan#1.
+16:29:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:29:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:29:25 INFO  : 'fpga -state' command is executed.
+16:29:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:29:25 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:29:29 INFO  : Mermory regions for PS have been updated.
+16:29:29 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:29:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:29:29 INFO  : 'ps7_init' command is executed.
+16:29:30 INFO  : 'ps7_post_config' command is executed.
+16:29:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:29:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:29:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:29:31 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:29:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+16:29:31 INFO  : Memory regions updated for context APU
+16:29:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:29:31 INFO  : 'con' command is executed.
+16:29:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+16:30:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:30:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:30:29 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:30:37 INFO  : Disconnected from the channel tcfchan#2.
+16:30:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:30:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:30:38 INFO  : 'fpga -state' command is executed.
+16:30:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:30:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:30:42 INFO  : Mermory regions for PS have been updated.
+16:30:42 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:30:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:30:43 INFO  : 'ps7_init' command is executed.
+16:30:43 INFO  : 'ps7_post_config' command is executed.
+16:30:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:30:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:30:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:30:44 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:30:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+16:30:44 INFO  : Memory regions updated for context APU
+16:30:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:30:44 INFO  : 'con' command is executed.
+16:30:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+16:31:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:31:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:31:23 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:31:41 INFO  : Disconnected from the channel tcfchan#3.
+16:31:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:31:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:31:41 INFO  : 'fpga -state' command is executed.
+16:31:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:31:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:31:46 INFO  : Mermory regions for PS have been updated.
+16:31:46 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:31:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:31:46 INFO  : 'ps7_init' command is executed.
+16:31:46 INFO  : 'ps7_post_config' command is executed.
+16:31:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:31:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:31:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:31:48 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:31:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+16:31:48 INFO  : Memory regions updated for context APU
+16:31:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:31:48 INFO  : 'con' command is executed.
+16:31:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+16:38:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:38:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:38:34 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:38:44 INFO  : Disconnected from the channel tcfchan#4.
+16:38:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:38:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:38:45 INFO  : 'fpga -state' command is executed.
+16:38:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:38:45 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:38:49 INFO  : Mermory regions for PS have been updated.
+16:38:49 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:38:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:38:50 INFO  : 'ps7_init' command is executed.
+16:38:50 INFO  : 'ps7_post_config' command is executed.
+16:38:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:38:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:38:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:38:51 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:38:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+16:38:51 INFO  : Memory regions updated for context APU
+16:38:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:38:51 INFO  : 'con' command is executed.
+16:38:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+16:49:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:49:33 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:49:54 INFO  : Disconnected from the channel tcfchan#5.
+16:49:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:49:54 INFO  : 'fpga -state' command is executed.
+16:49:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:49:59 INFO  : Mermory regions for PS have been updated.
+16:49:59 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:49:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:49:59 INFO  : 'ps7_init' command is executed.
+16:49:59 INFO  : 'ps7_post_config' command is executed.
+16:50:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:50:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:01 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:50:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+16:50:01 INFO  : Memory regions updated for context APU
+16:50:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:01 INFO  : 'con' command is executed.
+16:50:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+16:53:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:53:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:53:14 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:53:23 INFO  : Disconnected from the channel tcfchan#6.
+16:53:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:53:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+16:53:24 INFO  : 'fpga -state' command is executed.
+16:53:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:53:24 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:53:28 INFO  : Mermory regions for PS have been updated.
+16:53:28 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:53:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+16:53:29 INFO  : 'ps7_init' command is executed.
+16:53:29 INFO  : 'ps7_post_config' command is executed.
+16:53:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:53:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:30 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:53:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+16:53:30 INFO  : Memory regions updated for context APU
+16:53:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:30 INFO  : 'con' command is executed.
+16:53:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+17:02:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:02:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:02:51 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:02:57 INFO  : Disconnected from the channel tcfchan#7.
+17:02:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:02:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:02:58 INFO  : 'fpga -state' command is executed.
+17:02:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:02:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:03:02 INFO  : Mermory regions for PS have been updated.
+17:03:02 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:03:03 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:03:03 INFO  : 'ps7_init' command is executed.
+17:03:03 INFO  : 'ps7_post_config' command is executed.
+17:03:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:03:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:04 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:03:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+17:03:04 INFO  : Memory regions updated for context APU
+17:03:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:05 INFO  : 'con' command is executed.
+17:03:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+17:06:36 INFO  : Disconnected from the channel tcfchan#8.
+17:06:40 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+08:57:51 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+08:57:56 INFO  : XSDB server has started successfully.
+09:04:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:04:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:05:01 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:05:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:05:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:05:12 INFO  : 'fpga -state' command is executed.
+09:05:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:05:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:05:16 INFO  : Mermory regions for PS have been updated.
+09:05:17 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:05:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:05:17 INFO  : 'ps7_init' command is executed.
+09:05:17 INFO  : 'ps7_post_config' command is executed.
+09:05:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:05:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:05:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:05:18 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:05:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+09:05:18 INFO  : Memory regions updated for context APU
+09:05:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:05:19 INFO  : 'con' command is executed.
+09:05:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+09:07:54 INFO  : Disconnected from the channel tcfchan#1.
+09:09:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:09:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:09:23 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:09:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:09:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:09:28 INFO  : 'fpga -state' command is executed.
+09:09:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:09:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:09:33 INFO  : Mermory regions for PS have been updated.
+09:09:33 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:09:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:09:34 INFO  : 'ps7_init' command is executed.
+09:09:34 INFO  : 'ps7_post_config' command is executed.
+09:09:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:09:34 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:09:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:09:35 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:09:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+09:09:35 INFO  : Memory regions updated for context APU
+09:09:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:09:35 INFO  : 'con' command is executed.
+09:09:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+09:11:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:11:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:11:30 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:11:49 INFO  : Disconnected from the channel tcfchan#2.
+09:11:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:11:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:11:50 INFO  : 'fpga -state' command is executed.
+09:11:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:11:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:11:54 INFO  : Mermory regions for PS have been updated.
+09:11:54 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:11:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:11:55 INFO  : 'ps7_init' command is executed.
+09:11:55 INFO  : 'ps7_post_config' command is executed.
+09:11:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:11:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:11:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:11:56 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:11:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+09:11:56 INFO  : Memory regions updated for context APU
+09:11:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:11:56 INFO  : 'con' command is executed.
+09:11:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+09:12:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:12:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:12:44 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:12:54 INFO  : Disconnected from the channel tcfchan#3.
+09:13:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:13:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:13:02 INFO  : 'fpga -state' command is executed.
+09:13:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:13:03 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:13:06 INFO  : Mermory regions for PS have been updated.
+09:13:07 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:13:07 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:13:07 INFO  : 'ps7_init' command is executed.
+09:13:07 INFO  : 'ps7_post_config' command is executed.
+09:13:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:13:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:13:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:13:09 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:13:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+09:13:09 INFO  : Memory regions updated for context APU
+09:13:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:13:09 INFO  : 'con' command is executed.
+09:13:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+09:17:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:17:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:17:04 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:17:14 INFO  : Disconnected from the channel tcfchan#4.
+09:17:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:17:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:17:23 INFO  : 'fpga -state' command is executed.
+09:17:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:17:23 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:17:27 INFO  : Mermory regions for PS have been updated.
+09:17:27 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:17:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:17:28 INFO  : 'ps7_init' command is executed.
+09:17:28 INFO  : 'ps7_post_config' command is executed.
+09:17:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:17:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:17:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:17:29 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:17:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+09:17:29 INFO  : Memory regions updated for context APU
+09:17:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:17:29 INFO  : 'con' command is executed.
+09:17:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+09:20:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:20:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:20:23 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:20:33 INFO  : Disconnected from the channel tcfchan#5.
+09:20:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:20:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:20:34 INFO  : 'fpga -state' command is executed.
+09:20:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:20:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:20:38 INFO  : Mermory regions for PS have been updated.
+09:20:38 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:20:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:20:39 INFO  : 'ps7_init' command is executed.
+09:20:39 INFO  : 'ps7_post_config' command is executed.
+09:20:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:20:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:20:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:20:40 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:20:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+09:20:40 INFO  : Memory regions updated for context APU
+09:20:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:20:40 INFO  : 'con' command is executed.
+09:20:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+09:23:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:23:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:23:30 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:23:38 INFO  : Disconnected from the channel tcfchan#6.
+09:23:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:23:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:23:46 INFO  : 'fpga -state' command is executed.
+09:23:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:23:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:23:50 INFO  : Mermory regions for PS have been updated.
+09:23:50 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:23:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:23:51 INFO  : 'ps7_init' command is executed.
+09:23:51 INFO  : 'ps7_post_config' command is executed.
+09:23:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:23:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:23:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:23:52 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:23:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+09:23:52 INFO  : Memory regions updated for context APU
+09:23:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:23:52 INFO  : 'con' command is executed.
+09:23:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+09:25:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:25:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:25:21 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:25:33 INFO  : Disconnected from the channel tcfchan#7.
+09:25:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:25:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:25:34 INFO  : 'fpga -state' command is executed.
+09:25:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:25:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:25:38 INFO  : Mermory regions for PS have been updated.
+09:25:38 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:25:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:25:39 INFO  : 'ps7_init' command is executed.
+09:25:39 INFO  : 'ps7_post_config' command is executed.
+09:25:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:25:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:25:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:25:40 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:25:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+09:25:40 INFO  : Memory regions updated for context APU
+09:25:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:25:40 INFO  : 'con' command is executed.
+09:25:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+09:28:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:28:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:28:50 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:28:55 INFO  : Disconnected from the channel tcfchan#8.
+09:28:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:28:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:28:55 INFO  : 'fpga -state' command is executed.
+09:28:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:28:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:29:00 INFO  : Mermory regions for PS have been updated.
+09:29:00 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:29:00 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:29:01 INFO  : 'ps7_init' command is executed.
+09:29:01 INFO  : 'ps7_post_config' command is executed.
+09:29:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:29:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:29:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:29:02 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:29:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+09:29:02 INFO  : Memory regions updated for context APU
+09:29:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:29:02 INFO  : 'con' command is executed.
+09:29:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+09:37:41 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+09:37:42 INFO  : Bootgen command execution is done.
+09:53:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:53:06 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:53:13 INFO  : Disconnected from the channel tcfchan#9.
+09:53:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+09:53:21 INFO  : 'fpga -state' command is executed.
+09:53:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:53:25 INFO  : Mermory regions for PS have been updated.
+09:53:25 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:53:25 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+09:53:26 INFO  : 'ps7_init' command is executed.
+09:53:26 INFO  : 'ps7_post_config' command is executed.
+09:53:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:53:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:53:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:53:27 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:53:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+09:53:27 INFO  : Memory regions updated for context APU
+09:53:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:53:27 INFO  : 'con' command is executed.
+09:53:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:08:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:08:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:08:20 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:08:49 INFO  : Disconnected from the channel tcfchan#10.
+10:08:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:08:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:08:49 INFO  : 'fpga -state' command is executed.
+10:08:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:08:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:08:53 INFO  : Mermory regions for PS have been updated.
+10:08:54 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:08:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:08:54 INFO  : 'ps7_init' command is executed.
+10:08:54 INFO  : 'ps7_post_config' command is executed.
+10:08:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:08:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:08:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:08:55 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:08:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+10:08:55 INFO  : Memory regions updated for context APU
+10:08:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:08:56 INFO  : 'con' command is executed.
+10:08:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:10:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:10:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:10:09 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:10:16 INFO  : Disconnected from the channel tcfchan#11.
+10:10:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:10:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:10:28 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:10:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:10:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:10:38 INFO  : 'fpga -state' command is executed.
+10:10:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:10:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:10:42 INFO  : Mermory regions for PS have been updated.
+10:10:42 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:10:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:10:43 INFO  : 'ps7_init' command is executed.
+10:10:43 INFO  : 'ps7_post_config' command is executed.
+10:10:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:10:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:10:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:10:44 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:10:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+10:10:44 INFO  : Memory regions updated for context APU
+10:10:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:10:44 INFO  : 'con' command is executed.
+10:10:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:12:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:12:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:12:14 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:18:05 INFO  : Disconnected from the channel tcfchan#12.
+10:18:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:18:05 INFO  : 'fpga -state' command is executed.
+10:18:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:06 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:18:09 INFO  : Mermory regions for PS have been updated.
+10:18:10 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:18:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:18:10 INFO  : 'ps7_init' command is executed.
+10:18:10 INFO  : 'ps7_post_config' command is executed.
+10:18:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:18:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:11 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:18:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+10:18:11 INFO  : Memory regions updated for context APU
+10:18:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:12 INFO  : 'con' command is executed.
+10:18:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:20:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:20:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:20:20 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:21:50 INFO  : Disconnected from the channel tcfchan#13.
+10:21:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:21:51 INFO  : 'fpga -state' command is executed.
+10:21:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:21:55 INFO  : Mermory regions for PS have been updated.
+10:21:55 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:21:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:21:55 INFO  : 'ps7_init' command is executed.
+10:21:56 INFO  : 'ps7_post_config' command is executed.
+10:21:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:21:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:57 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:21:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+10:21:57 INFO  : Memory regions updated for context APU
+10:21:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:57 INFO  : 'con' command is executed.
+10:21:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:24:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:24:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:24:18 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:24:31 INFO  : Disconnected from the channel tcfchan#14.
+10:24:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:24:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:24:31 INFO  : 'fpga -state' command is executed.
+10:24:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:24:31 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:24:35 INFO  : Mermory regions for PS have been updated.
+10:24:35 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:24:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:24:36 INFO  : 'ps7_init' command is executed.
+10:24:36 INFO  : 'ps7_post_config' command is executed.
+10:24:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:24:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:24:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:24:37 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:24:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+10:24:37 INFO  : Memory regions updated for context APU
+10:24:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:24:37 INFO  : 'con' command is executed.
+10:24:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:26:57 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+10:26:58 INFO  : Bootgen command execution is done.
+10:37:01 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+10:37:02 INFO  : Bootgen command execution is done.
+10:43:47 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+10:43:47 INFO  : Bootgen command execution is done.
+10:53:09 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+10:53:10 INFO  : Bootgen command execution is done.
+10:57:46 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+10:57:47 INFO  : Bootgen command execution is done.
+11:02:18 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+11:02:18 INFO  : Bootgen command execution is done.
+11:07:33 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+11:07:34 INFO  : Bootgen command execution is done.
+11:11:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:11:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:11:16 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:12:13 INFO  : Disconnected from the channel tcfchan#15.
+11:12:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:12:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:12:14 INFO  : 'fpga -state' command is executed.
+11:12:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:12:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:12:18 INFO  : Mermory regions for PS have been updated.
+11:12:18 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:12:18 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:12:19 INFO  : 'ps7_init' command is executed.
+11:12:19 INFO  : 'ps7_post_config' command is executed.
+11:12:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:12:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:12:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:12:20 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:12:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+11:12:20 INFO  : Memory regions updated for context APU
+11:12:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:12:20 INFO  : 'con' command is executed.
+11:12:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:13:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:13:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:13:57 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:14:04 INFO  : Disconnected from the channel tcfchan#16.
+11:14:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:14:04 INFO  : 'fpga -state' command is executed.
+11:14:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:05 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:14:08 INFO  : Mermory regions for PS have been updated.
+11:14:09 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:14:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:14:09 INFO  : 'ps7_init' command is executed.
+11:14:09 INFO  : 'ps7_post_config' command is executed.
+11:14:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:14:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:10 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:14:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+11:14:10 INFO  : Memory regions updated for context APU
+11:14:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:11 INFO  : 'con' command is executed.
+11:14:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:17:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:17:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:17:03 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:20:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:20:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:20:26 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:20:34 INFO  : Disconnected from the channel tcfchan#17.
+11:20:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:20:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:20:42 INFO  : 'fpga -state' command is executed.
+11:20:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:20:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:20:46 INFO  : Mermory regions for PS have been updated.
+11:20:47 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:20:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:20:47 INFO  : 'ps7_init' command is executed.
+11:20:47 INFO  : 'ps7_post_config' command is executed.
+11:20:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:20:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:20:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:20:49 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:20:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+11:20:49 INFO  : Memory regions updated for context APU
+11:20:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:20:49 INFO  : 'con' command is executed.
+11:20:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:27:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:27:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:27:31 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:27:41 INFO  : Disconnected from the channel tcfchan#18.
+11:27:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:27:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:27:41 INFO  : 'fpga -state' command is executed.
+11:27:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:27:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:27:45 INFO  : Mermory regions for PS have been updated.
+11:27:46 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:27:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:27:46 INFO  : 'ps7_init' command is executed.
+11:27:46 INFO  : 'ps7_post_config' command is executed.
+11:27:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:27:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:27:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:27:47 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:27:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+11:27:47 INFO  : Memory regions updated for context APU
+11:27:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:27:48 INFO  : 'con' command is executed.
+11:27:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:39:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:39:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:39:27 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:39:35 INFO  : Disconnected from the channel tcfchan#19.
+11:39:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:39:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+11:39:36 INFO  : 'fpga -state' command is executed.
+11:39:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:39:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:39:40 INFO  : Mermory regions for PS have been updated.
+11:39:40 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:39:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+11:39:40 INFO  : 'ps7_init' command is executed.
+11:39:41 INFO  : 'ps7_post_config' command is executed.
+11:39:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:39:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:42 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:39:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+11:39:42 INFO  : Memory regions updated for context APU
+11:39:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:42 INFO  : 'con' command is executed.
+11:39:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+11:42:22 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+11:42:22 INFO  : Bootgen command execution is done.
+11:46:49 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+11:46:49 INFO  : Bootgen command execution is done.
+11:55:10 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+11:55:10 INFO  : Bootgen command execution is done.
+14:06:59 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+14:07:00 INFO  : Bootgen command execution is done.
+14:18:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+14:18:18 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:18:26 INFO  : Disconnected from the channel tcfchan#20.
+14:18:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+14:18:27 INFO  : 'fpga -state' command is executed.
+14:18:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+14:18:31 INFO  : Mermory regions for PS have been updated.
+14:18:31 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:18:31 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+14:18:31 INFO  : 'ps7_init' command is executed.
+14:18:32 INFO  : 'ps7_post_config' command is executed.
+14:18:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:18:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:33 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:18:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+14:18:33 INFO  : Memory regions updated for context APU
+14:18:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:33 INFO  : 'con' command is executed.
+14:18:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+14:27:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:27:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+14:27:35 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:27:48 INFO  : Disconnected from the channel tcfchan#21.
+14:27:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:27:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+14:27:49 INFO  : 'fpga -state' command is executed.
+14:27:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:27:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+14:27:53 INFO  : Mermory regions for PS have been updated.
+14:27:53 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:27:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+14:27:54 INFO  : 'ps7_init' command is executed.
+14:27:54 INFO  : 'ps7_post_config' command is executed.
+14:27:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:27:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:27:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:27:55 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:27:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+14:27:55 INFO  : Memory regions updated for context APU
+14:27:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:27:55 INFO  : 'con' command is executed.
+14:27:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+14:28:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:28:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+14:28:45 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:28:57 INFO  : Disconnected from the channel tcfchan#22.
+14:29:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:29:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+14:29:08 INFO  : 'fpga -state' command is executed.
+14:29:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:29:08 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+14:29:12 INFO  : Mermory regions for PS have been updated.
+14:29:12 INFO  : Sourcing of 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:29:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+14:29:13 INFO  : 'ps7_init' command is executed.
+14:29:13 INFO  : 'ps7_post_config' command is executed.
+14:29:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:29:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:14 INFO  : The application 'C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:29:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136721920 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.sdk/ultrasonic_pwm/Debug/ultrasonic_pwm.elf
+----------------End of Script----------------
+
+14:29:14 INFO  : Memory regions updated for context APU
+14:29:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:14 INFO  : 'con' command is executed.
+14:29:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+14:32:25 INFO  : Invoking Bootgen: bootgen -image ultrasonic_pwm.bif -o C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.sdk\ultrasonic_pwm\bootimage\BOOT.bin -w on
+14:32:26 INFO  : Bootgen command execution is done.

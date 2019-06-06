@@ -1,0 +1,610 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 2728
+
+Current time: 	5/30/19 1:38:50 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1440x900
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	bjut
+User directory: C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/bjut/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/bjut/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	132 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 368 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\bjut\Desktop\ultrasonic\ultrasonic_ps\ultrasonic_ps.xpr. Version: Vivado v2015.2 
+// [GUI Memory]: 45 MB (+44460kb) [00:00:09]
+// [Engine Memory]: 354 MB (+219605kb) [00:00:09]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 392 MB. GUI used memory: 27 MB. Current time: 5/30/19 1:38:52 PM CST
+// [Engine Memory]: 392 MB (+21753kb) [00:00:13]
+// TclEventType: IP_LOCK_CHANGE
+// [Engine Memory]: 429 MB (+18220kb) [00:00:18]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+1503kb) [00:00:21]
+// [Engine Memory]: 475 MB (+25094kb) [00:00:22]
+// [GUI Memory]: 58 MB (+7397kb) [00:00:23]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps/ultrasonic_ps.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/ultrasonic_ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/pwmcar'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 513 MB (+14701kb) [00:00:27]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: ultrasonic_ps; location: C:/Users/bjut/Desktop/ultrasonic/ultrasonic_ps; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 726.672 ; gain = 148.613 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1); // A:k (H:JPanel, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 34 MB. Current time: 5/30/19 1:39:12 PM CST
+// [GUI Memory]: 61 MB (+573kb) [00:12:13]
+// [GUI Memory]: 65 MB (+244kb) [00:26:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 34 MB. Current time: 5/30/19 2:09:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 32 MB. Current time: 5/30/19 2:39:17 PM CST
+// Elapsed time: 3780 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 18, true); // w:Y (v:H, cl:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// cp:P (cl:JFrame):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// [Engine Memory]: 584 MB (+47491kb) [01:03:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 643 MB. GUI used memory: 32 MB. Current time: 5/30/19 2:42:18 PM CST
+// [Engine Memory]: 643 MB (+31999kb) [01:03:41]
+// [Engine Memory]: 722 MB (+48865kb) [01:03:46]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// [Engine Memory]: 806 MB (+50092kb) [01:03:50]
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 806 MB. GUI used memory: 32 MB. Current time: 5/30/19 2:42:31 PM CST
+// Xgd.load filename: C:/Xilinx/Vivado/2015.2/data/parts/xilinx/zynq/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_floorplan.xgd elapsed time: 0.5s
+// Xgd.load filename: C:/Xilinx/Vivado/2015.2/data/parts/xilinx/zynq/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 1.5s
+// [Engine Memory]: 886 MB (+42060kb) [01:03:54]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2s
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 71 MB (+2819kb) [01:03:59]
+// [GUI Memory]: 75 MB (+1188kb) [01:04:00]
+// Package: addNotify
+// Device: addNotify
+// [GUI Memory]: 83 MB (+4173kb) [01:04:04]
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2015.2 INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// ExpRunCommands.openSynthResults elapsed time: 32s
+// Tcl Message: open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1088.379 ; gain = 361.707 
+// 'dm' command handler elapsed time: 32 seconds
+// [Engine Memory]: 934 MB (+3662kb) [01:04:05]
+// Elapsed time: 32 seconds
+dismissDialog("Open Synthesized Design"); // cp:P (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 940 MB. GUI used memory: 63 MB. Current time: 5/30/19 2:42:48 PM CST
+// [Engine Memory]: 1,005 MB (+24783kb) [01:04:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,028 MB. GUI used memory: 82 MB. Current time: 5/30/19 2:43:02 PM CST
+// RouteApi::initDelayMediator elapsed time: 23.4s
+// [Engine Memory]: 1,284 MB (+239886kb) [01:04:28]
+// [GUI Memory]: 88 MB (+758kb) [01:04:37]
+// [GUI Memory]: 94 MB (+1330kb) [01:05:03]
+// [GUI Memory]: 101 MB (+2766kb) [01:06:38]
+// [GUI Memory]: 106 MB (+92kb) [01:17:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,284 MB. GUI used memory: 66 MB. Current time: 5/30/19 3:13:05 PM CST
+// Elapsed time: 1987 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "echo (3) ; IN ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 4); // L:av (JViewport:JComponent, cl:JFrame)
+// [GUI Memory]: 113 MB (+1010kb) [01:37:14]
+// Elapsed time: 13 seconds
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 303, 3, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 292, 10, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 280, 18, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 280, 18, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 266, 25, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 266, 25, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'Package Pin - A2'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 254, 32, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'Package Pin - A2'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 254, 32, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'Package Pin - A2'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 243, 37, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'Package Pin - A2'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 243, 37, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Port - DDR_dm[0]'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 232, 41, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Port - DDR_dm[0]'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 232, 41, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 223, 44, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 223, 44, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 216, 46, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 216, 46, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 210, 48, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 210, 48, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 204, 50, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 204, 50, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 198, 53, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 198, 53, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 193, 56, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 193, 56, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 186, 63, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 186, 63, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 180, 70, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 180, 70, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 172, 78, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 172, 78, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 164, 90, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 164, 90, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 159, 97, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 159, 97, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 149, 113, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 149, 113, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 141, 126, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 141, 126, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 129, 148, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 129, 148, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 120, 171, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 120, 171, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 108, 197, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 108, 197, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 94, 229, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 94, 229, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 81, 266, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 81, 266, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 67, 300, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 67, 300, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 58, 323, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 58, 323, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 44, 352, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 44, 352, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 32, 379, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 32, 379, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 17, 403, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 17, 403, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1, 428, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1, 428, 853, 443); // z:aK (TdiGroup:JideTabbedPane, cl:JFrame)

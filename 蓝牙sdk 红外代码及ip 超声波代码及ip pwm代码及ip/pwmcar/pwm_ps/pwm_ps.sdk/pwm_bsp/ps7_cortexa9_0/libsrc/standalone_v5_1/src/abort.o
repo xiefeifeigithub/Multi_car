@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FPGAPACK type="xc7k160tfbg484">
+<BankInfo Bank ="16">
+    <PadInfo PADName="F14" XYLOC="N.A." IOBLOC="IOB_X0Y237" PADType="pin" IOType="IO_6_T0_VREF_16" DIFFPair="N.A."/>
+    <PadInfo PADName="D10" XYLOC="N.A." IOBLOC="IOB_X0Y236" PADType="pin" IOType="IO_L7P_T1_16" DIFFPair="72M"/>
+    <PadInfo PADName="C10" XYLOC="N.A." IOBLOC="IOB_X0Y235" PADType="pin" IOType="IO_L7N_T1_16" DIFFPair="72S"/>
+    <PadInfo PADName="G13" XYLOC="N.A." IOBLOC="IOB_X0Y234" PADType="pin" IOType="IO_L8P_T1_16" DIFFPair="73M"/>
+    <PadInfo PADName="F13" XYLOC="N.A." IOBLOC="IOB_X0Y233" PADType="pin" IOType="IO_L8N_T1_16" DIFFPair="73S"/>
+    <PadInfo PADName="H14" XYLOC="N.A." IOBLOC="IOB_X0Y232" PADType="pin" IOType="IO_L9P_T1_DQS_16" DIFFPair="74M"/>
+    <PadInfo PADName="H13" XYLOC="N.A." IOBLOC="IOB_X0Y231" PADType="pin" IOType="IO_L9N_T1_DQS_16" DIFFPair="74S"/>
+    <PadInfo PADName="E13" XYLOC="N.A." IOBLOC="IOB_X0Y230" PADType="pin" IOType="IO_L10P_T1_16" DIFFPair="75M"/>
+    <PadInfo PADName="E12" XYLOC="N.A." IOBLOC="IOB_X0Y229" PADType="pin" IOType="IO_L10N_T1_16" DIFFPair="75S"/>
+    <PadInfo PADName="F11" XYLOC="N.A." IOBLOC="IOB_X0Y228" PADType="pin" IOType="IO_L11P_T1_SRCC_16" DIFFPair="76M"/>
+    <PadInfo PADName="F10" XYLOC="N.A." IOBLOC="IOB_X0Y227" PADType="pin" IOType="IO_L11N_T1_SRCC_16" DIFFPair="76S"/>
+    <PadInfo PADName="E11" XYLOC="N.A." IOBLOC="IOB_X0Y226" PADType="pin" IOType="IO_L12P_T1_MRCC_16" DIFFPair="77M"/>
+    <PadInfo PADName="D11" XYLOC="N.A." IOBLOC="IOB_X0Y225" PADType="pin" IOType="IO_L12N_T1_MRCC_16" DIFFPair="77S"/>
+    <PadInfo PADName="G11" XYLOC="N.A." IOBLOC="IOB_X0Y224" PADType="pin" IOType="IO_L13P_T2_MRCC_16" DIFFPair="78M"/>
+    <PadInfo PADName="G10" XYLOC="N.A." IOBLOC="IOB_X0Y223" PADType="pin" IOType="IO_L13N_T2_MRCC_16" DIFFPair="78S"/>
+    <PadInfo PADName="H12" XYLOC="N.A." IOBLOC="IOB_X0Y222" PADType="pin" IOType="IO_L14P_T2_SRCC_16" DIFFPair="79M"/>
+    <PadInfo PADName="G12" XYLOC="N.A." IOBLOC="IOB_X0Y221" PADType="pin" IOType="IO_L14N_T2_SRCC_16" DIFFPair="79S"/>
+    <PadInfo PADName="F9" XYLOC="N.A." IOBLOC="IOB_X0Y220" PADType="pin" IOType="IO_L15P_T2_DQS_16" DIFFPair="80M"/>
+    <PadInfo PADName="E9" XYLOC="N.A." IOBLOC="IOB_X0Y219" PADType="pin" IOType="IO_L15N_T2_DQS_16" DIFFPair="80S"/>
+    <PadInfo PADName="H9" XYLOC="N.A." IOBLOC="IOB_X0Y218" PADType="pin" IOType="IO_L16P_T2_16" DIFFPair="81M"/>
+    <PadInfo PADName="H8" XYLOC="N.A." IOBLOC="IOB_X0Y217" PADType="pin" IOType="IO_L16N_T2_16" 

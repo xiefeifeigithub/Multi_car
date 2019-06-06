@@ -1,0 +1,206 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 2468
+
+Current time: 	5/30/19 1:39:29 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1440x900
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	bjut
+User directory: C:/Users/bjut/Desktop/ultrasonic_ip
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/bjut/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/bjut/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	195 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 447 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\bjut\Desktop\ultrasonic_ip\tmp_edit_project.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 30 MB (+29321kb) [00:00:05]
+// [Engine Memory]: 391 MB (+258521kb) [00:00:05]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 43 MB (+11850kb) [00:00:06]
+// [Engine Memory]: 415 MB (+4697kb) [00:00:06]
+// [GUI Memory]: 52 MB (+7226kb) [00:00:06]
+// [Engine Memory]: 437 MB (+982kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/bjut/Desktop/ultrasonic_ip/tmp_edit_project.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/ultrasonic/ip_repo/ultrasonic_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 456 MB. GUI used memory: 31 MB. Current time: 5/30/19 1:39:30 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: tmp_edit_project; location: C:/Users/bjut/Desktop/ultrasonic_ip; part: xc7z020clg400-1
+// [Engine Memory]: 459 MB (+654kb) [00:00:09]
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasonic_v1_0 (ultrasonic_v1_0.v)]", 1); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasonic_v1_0 (ultrasonic_v1_0.v)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasonic_v1_0 (ultrasonic_v1_0.v)]", 1, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasonic_v1_0 (ultrasonic_v1_0.v)]", 1); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasonic_v1_0 (ultrasonic_v1_0.v), ultrasonic_v1_0_S00_AXI_inst - ultrasonic_v1_0_S00_AXI (ultrasonic_v1_0_S00_AXI.v)]", 2, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ultrasonic_v1_0 (ultrasonic_v1_0.v), ultrasonic_v1_0_S00_AXI_inst - ultrasonic_v1_0_S00_AXI (ultrasonic_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 112, 271); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 112, 271, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// [GUI Memory]: 55 MB (+18kb) [00:00:51]
+// Elapsed time: 42 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 77, 195); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 77, 195, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 45, 180); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 42, 180, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 81 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 92, 201); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 92, 201, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 90, 279); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 90, 279, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 79, 193); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 79, 193, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 93, 305); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 93, 305, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 91, 70); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 91, 70, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 95, 103); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 95, 103, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 44, 198); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 44, 198, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// [GUI Memory]: 58 MB (+316kb) [00:05:27]
+// Elapsed time: 242 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 198, 336); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 73, 203); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 71, 271); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 71, 271, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 71, 296); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 71, 296, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 87, 309); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 87, 309, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 99, 327); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 99, 327, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 154 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 375, 248); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 375, 248, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 375, 248); // bj:J (JPanel:JComponent, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 476 MB. GUI used memory: 33 MB. Current time: 5/30/19 1:50:26 PM CST
+// [GUI Memory]: 63 MB (+2144kb) [00:13:47]
+// [GUI Memory]: 66 MB (+258kb) [00:14:01]
+// Elapsed time: 339 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 279, 266); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 279, 266, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 84, 302); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 84, 302, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 108, 278); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 108, 278, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 113, 276); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 113, 276, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 90, 291); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 89, 292, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 46 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 61, 88); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 61, 88, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 84, 138); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 84, 138, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 101, 168); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 101, 168, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 83, 146); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 83, 146, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 76, 122); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 76, 122, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 70, 110); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 70, 110, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 105, 152); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 105, 152, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 105, 152); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 105, 152); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 92, 288); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 92, 288, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 93, 311); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 93, 311, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 90, 289); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 90, 289, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 56, 292); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 56, 292, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 114, 278); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 114, 278, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 259 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 94, 83); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 94, 83, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 49, 74); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 49, 74, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 91, 93); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 91, 93, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 145, 293); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 145, 293, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 137, 103); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 137, 103, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 125, 106); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 125, 106, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 125, 106); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 125, 106, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 125, 106); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 125, 106, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// [GUI Memory]: 70 MB (+244kb) [00:23:56]
+// Elapsed time: 112 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 153, 105); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 153, 105, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 144, 94); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 154, 108); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 132, 161); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 132, 161, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 146, 170); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 146, 170, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 91, 236); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 94, 237); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 74 MB (+201kb) [00:30:44]
+// HMemoryUtils.trashcanNow. Engine heap size: 481 MB. GUI used memory: 34 MB. Current time: 5/30/19 2:20:28 PM CST
+// [GUI Memory]: 77 MB (+38kb) [00:56:55]
+// Elapsed time: 2715 seconds
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 84, 186); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 84, 186, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 108, 163); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ultrasonic_v1_0_S00_AXI.v", 108, 163, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 481 MB. GUI used memory: 33 MB. Current time: 5/30/19 2:50:31 PM CST
+// [GUI Memory]: 81 MB (+9kb) [01:28:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 481 MB. GUI used memory: 32 MB. Current time: 5/30/19 3:20:34 PM CST

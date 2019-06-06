@@ -4,7 +4,7 @@
 
 //Car Basics
 #define FRE_THRES 20000
-#define WAV_THRES 5000
+#define WAV_THRES 7000 //5000
 #define DRIVE_THRES 5000
 #define DRIVEN_THRES 0
 #define ACC_PACE 3.
