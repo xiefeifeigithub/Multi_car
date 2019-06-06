@@ -20,27 +20,51 @@ clients =
 	{ client_name = "sdk"; 
 		rules = (
 			{
-				context="sdk\\\\bsp/1559614439974";
-				xml_map="sdk\\\\bsp/1559614439974";
-				html_map="sdk\\\\bsp/1559614439974";
+				context="sdk\\\\bsp/1559774522905";
+				xml_map="sdk\\\\bsp/1559774522905";
+				html_map="sdk\\\\bsp/1559774522905";
 				html_format="UnisimStatsStyle";
 			},
 			{
-				context="sdk\\\\application/1559614459254";
-				xml_map="sdk\\\\application/1559614459254";
-				html_map="sdk\\\\application/1559614459254";
+				context="sdk\\\\application/1559774541895";
+				xml_map="sdk\\\\application/1559774541895";
+				html_map="sdk\\\\application/1559774541895";
 				html_format="UnisimStatsStyle";
 			},
 			{
-				context="sdk\\\\bsp/1559615029495";
-				xml_map="sdk\\\\bsp/1559615029495";
-				html_map="sdk\\\\bsp/1559615029495";
+				context="sdk\\\\bsp/1559775023901";
+				xml_map="sdk\\\\bsp/1559775023901";
+				html_map="sdk\\\\bsp/1559775023901";
 				html_format="UnisimStatsStyle";
 			},
 			{
-				context="sdk\\\\application/1559615045302";
-				xml_map="sdk\\\\application/1559615045302";
-				html_map="sdk\\\\application/1559615045302";
+				context="sdk\\\\application/1559775038717";
+				xml_map="sdk\\\\application/1559775038717";
+				html_map="sdk\\\\application/1559775038717";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="sdk\\\\bsp/1559775515183";
+				xml_map="sdk\\\\bsp/1559775515183";
+				html_map="sdk\\\\bsp/1559775515183";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="sdk\\\\application/1559775531022";
+				xml_map="sdk\\\\application/1559775531022";
+				html_map="sdk\\\\application/1559775531022";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="sdk\\\\bsp/1559780129805";
+				xml_map="sdk\\\\bsp/1559780129805";
+				html_map="sdk\\\\bsp/1559780129805";
+				html_format="UnisimStatsStyle";
+			},
+			{
+				context="sdk\\\\application/1559780145765";
+				xml_map="sdk\\\\application/1559780145765";
+				html_map="sdk\\\\application/1559780145765";
 				html_format="UnisimStatsStyle";
 			}
 		);

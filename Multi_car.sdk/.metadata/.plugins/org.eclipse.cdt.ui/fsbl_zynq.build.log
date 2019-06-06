@@ -1,4 +1,4 @@
-18:28:08 **** Auto Build of configuration Debug for project fsbl_zynq ****
+05:47:54 **** Incremental Build of configuration Debug for project fsbl_zynq ****
 make all 
 'Building file: ../src/fsbl_hooks.c'
 'Invoking: ARM gcc compiler'
@@ -14,11 +14,6 @@ arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\xiefe\Desktop\Multi_car\Multi_car.
 'Invoking: ARM gcc compiler'
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../fsbl_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
 'Finished building: ../src/main.c'
-' '
-'Building file: ../src/md5.c'
-'Invoking: ARM gcc compiler'
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\xiefe\Desktop\Multi_car\Multi_car.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../fsbl_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
-'Finished building: ../src/md5.c'
 ' '
 'Building file: ../src/nand.c'
 'Invoking: ARM gcc compiler'
@@ -67,5 +62,5 @@ arm-xilinx-eabi-size fsbl_zynq.elf  |tee "fsbl_zynq.elf.size"
 'Finished building: fsbl_zynq.elf.size'
 ' '
 
-18:28:13 Build Finished (took 5s.155ms)
+05:48:00 Build Finished (took 5s.663ms)
 

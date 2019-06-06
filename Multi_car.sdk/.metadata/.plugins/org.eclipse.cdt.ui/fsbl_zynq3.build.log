@@ -1,4 +1,4 @@
-20:01:12 **** Build of configuration Debug for project fsbl_zynq3 ****
+06:59:18 **** Build of configuration Debug for project fsbl_zynq3 ****
 make all 
 'Building file: ../src/fsbl_handoff.S'
 'Invoking: ARM gcc compiler'
@@ -72,5 +72,5 @@ arm-xilinx-eabi-size fsbl_zynq3.elf  |tee "fsbl_zynq3.elf.size"
 'Finished building: fsbl_zynq3.elf.size'
 ' '
 
-20:01:18 Build Finished (took 5s.983ms)
+06:59:23 Build Finished (took 4s.997ms)
 

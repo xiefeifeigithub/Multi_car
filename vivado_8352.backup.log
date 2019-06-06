@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Jun 05 16:42:59 2019
+# Process ID: 1228
+# Log file: C:/Users/xiefe/Desktop/Multi_car/vivado.log
+# Journal file: C:/Users/xiefe/Desktop/Multi_car\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/xiefe/Desktop/Multi_car/Multi_car.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/Sensor-ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/pwmcar/ip_repo/pwm_car'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/pwmcar/ultrasonic_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 713.621 ; gain = 168.324
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 05 18:32:20 2019...

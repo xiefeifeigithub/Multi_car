@@ -1,6 +1,6 @@
-11:53:55 **** Incremental Build of configuration Debug for project Multi_car ****
+08:16:33 **** Auto Build of configuration Debug for project Multi_car ****
 make all 
 make: Nothing to be done for `all'.
 
-11:53:55 Build Finished (took 235ms)
+08:16:33 Build Finished (took 231ms)
 

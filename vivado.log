@@ -2,8 +2,8 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Mon Jun 03 14:34:18 2019
-# Process ID: 10356
+# Start of session at: Thu Jun 06 01:12:29 2019
+# Process ID: 8352
 # Log file: C:/Users/xiefe/Desktop/Multi_car/vivado.log
 # Journal file: C:/Users/xiefe/Desktop/Multi_car\vivado.jou
 #-----------------------------------------------------------
@@ -16,101 +16,17 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/Sensor-
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/pwmcar/ip_repo/pwm_car'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/pwmcar/ultrasonic_ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
-open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 710.246 ; gain = 155.871
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7z020clg400-1
-INFO: [Netlist 29-17] Analyzing 117 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2015.2
-INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
-Finished Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
-Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
-Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
-Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc] for cell 'design_1_i/rst_processing_system7_0_100M'
-Finished Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc] for cell 'design_1_i/rst_processing_system7_0_100M'
-Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc] for cell 'design_1_i/rst_processing_system7_0_100M'
-Finished Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc] for cell 'design_1_i/rst_processing_system7_0_100M'
-Parsing XDC File [C:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/constrs_1/new/Multi_car_gjfp.xdc]
-Finished Parsing XDC File [C:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/constrs_1/new/Multi_car_gjfp.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1097.211 ; gain = 385.402
-startgroup
-set_property package_pin "" [get_ports [list  {dir_out[2]}]]
-place_ports in1 T15
-endgroup
-startgroup
-set_property package_pin "" [get_ports [list  {dir_out[3]}]]
-place_ports in2 R16
-endgroup
-startgroup
-set_property package_pin "" [get_ports [list  {PWM_o[1]}]]
-place_ports in3 U17
-endgroup
-place_ports in4 N17
-place_ports {echo[0]} U10
-place_ports {echo[1]} T5
-place_ports {echo[0]} V11
-set_property package_pin "" [get_ports [list  {PWM_o[1]}]]
-startgroup
-set_property package_pin "" [get_ports [list  UART_rxd]]
-place_ports {PWM_o[1]} V17
-endgroup
-place_ports {dir_out[0]} V13
-place_ports {dir_out[1]} V15
-startgroup
-set_property package_pin "" [get_ports [list  UART_txd]]
-place_ports {dir_out[2]} V18
-endgroup
-place_ports {dir_out[3]} T16
-place_ports UART_rxd P18
-place_ports UART_txd R17
-place_ports {echo[2]} U10
-save_constraints
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library work [C:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:1]
-INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/hdl/design_1.v" into library work [C:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/hdl/design_1.v:1]
-[Mon Jun 03 14:50:14 2019] Launched synth_1...
-Run output will be captured here: C:/Users/xiefe/Desktop/Multi_car/Multi_car.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 4
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Mon Jun 03 14:54:13 2019] Launched impl_1...
-Run output will be captured here: C:/Users/xiefe/Desktop/Multi_car/Multi_car.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Mon Jun 03 15:01:27 2019] Launched impl_1...
-Run output will be captured here: C:/Users/xiefe/Desktop/Multi_car/Multi_car.runs/impl_1/runme.log
-refresh_design
-INFO: [Netlist 29-17] Analyzing 117 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2015.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
-Finished Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
-Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
-Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
-Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc] for cell 'design_1_i/rst_processing_system7_0_100M'
-Finished Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc] for cell 'design_1_i/rst_processing_system7_0_100M'
-Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc] for cell 'design_1_i/rst_processing_system7_0_100M'
-Finished Parsing XDC File [c:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc] for cell 'design_1_i/rst_processing_system7_0_100M'
-Parsing XDC File [C:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/constrs_1/new/Multi_car_gjfp.xdc]
-Finished Parsing XDC File [C:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/constrs_1/new/Multi_car_gjfp.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-refresh_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 1495.844 ; gain = 0.000
-file copy -force C:/Users/xiefe/Desktop/Multi_car/Multi_car.runs/impl_1/design_1_wrapper.sysdef C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper.hdf
-
-launch_sdk -workspace C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk -hwspec C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk -hwspec C:/Users/xiefe/Desktop/Multi_car/Multi_car.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 716.453 ; gain = 152.629
+open_bd_design {C:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:user:pwm_car_v1_0:1.0 - pwm_car_v1_0_0
+Adding component instance block -- xilinx.com:user:ultrasonic_v1_0:1.0 - ultrasonic_v1_0_0
+Adding component instance block -- xilinx.com:user:Sensor_v1_0:1.0 - Sensor_v1_0_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <C:/Users/xiefe/Desktop/Multi_car/Multi_car.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 758.844 ; gain = 28.922
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Jun 03 17:06:46 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 06 01:19:59 2019...

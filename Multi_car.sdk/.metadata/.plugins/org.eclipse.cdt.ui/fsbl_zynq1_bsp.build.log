@@ -1,4 +1,4 @@
-10:14:19 **** Build of project fsbl_zynq1_bsp ****
+06:42:22 **** Build of project fsbl_zynq1_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src"
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -93,5 +93,5 @@ make -C ps7_cortexa9_0/libsrc/xilffs_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm
 make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 'Finished building libraries'
 
-10:14:46 Build Finished (took 26s.803ms)
+06:42:50 Build Finished (took 28s.70ms)
 
