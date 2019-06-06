@@ -1,0 +1,81 @@
+/*
+ * main.c
+ *
+ *  Created on: 2018年5月11日
+ *      Author: Lab
+ */
+
+
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xil_io.h"
+#include "unistd.h"
+#include "xil_types.h"
+
+#include "xgpiops.h"
+#include "xuartps.h"
+#include "string.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+
+#include "xil_printf.h"
+#include "ult.h"
+
+int main()
+{
+
+	int i = 0;
+//	int mode = 0;
+
+//设置PWM
+Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR,1000);   //pwm fre
+Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+4,500); //pwm wav
+Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+8,1000);  //pwm1 fre
+Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+12,500);  //pwm1 wav
+
+//Ultrasonic Initiation
+zrcar_ultra_init();
+float *ult_data=0;
+
+    while(1){
+
+	//Every 222 ticks get an ultra data
+	if(i % 222 == 1){
+		zrcar_ultra_get_all(ult_data);
+		printf("%f mm\n",*ult_data);
+//		while(*ult_data < 222)
+//		{
+//
+//			Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+16,2);  //left
+//			zrcar_ultra_get_all(ult_data);
+//		}
+//
+//		Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+16,6);  //go
+
+		if(*ult_data < 222)
+		{
+			Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+16,0);  //stop
+			usleep(2000);
+			int j = 0;
+			for( j =1; j < 1000; j++)
+			{
+				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+16,2);  //left
+			}
+
+			usleep(2000);
+			Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+16,6);  //go
+		}
+	}
+
+	i++;
+		if(i>100000){
+			//Reset in order to avoid overstep the Integer boundary
+			i = 0;
+		}
+
+   }
+
+return 0;
+}
+

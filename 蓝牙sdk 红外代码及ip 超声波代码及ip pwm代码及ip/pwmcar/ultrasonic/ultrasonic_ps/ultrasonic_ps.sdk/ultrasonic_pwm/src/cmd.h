@@ -1,0 +1,25 @@
+#ifndef CMD_H_
+#define CMD_H_
+
+//Car Status (Command)
+#define HOLD_PACE 0
+#define START_UP 1
+#define PULL_OVER 2
+#define BACK_UP 3
+#define TURN_LEFT 4
+#define TURN_RIGHT 5
+#define TURN_AROUND 6
+#define SHUT_DOWN 7
+
+// Bigger Endian Int
+// Digit 0-3 For Car Status 
+// 0000 0000 0000 0000 HOLD PACE
+// 0000 0000 0000 0001 START UP
+// 0000 0000 0000 0010 PULL OVER
+// 0000 0000 0000 0011 BACK UP
+// 0000 0000 0000 0100 TURN LEFT
+// 0000 0000 0000 0101 TURN RIGHT
+// 0000 0000 0000 0110 TURN AROUND
+// 0000 0000 0000 0111 SHUT DOWN
+
+#endif /* CMD_H_ */

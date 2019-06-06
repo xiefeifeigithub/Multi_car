@@ -30,11 +30,11 @@
 #include "xil_printf.h"
 #include "ult.h"
 
-
-
+//
+//
 //int main()
 //{
-//char mode = AUTOMATIC_MODE; //模式选择
+//char mode = SENSOR_MODE; //模式选择
 //int fsm = 0;
 //u16 cmd = 1;
 //int i=0;
@@ -75,37 +75,43 @@
 //		case 'a': cmd = TURN_RIGHT; break;
 //		case 's': cmd = BACK_UP; break;
 //		case 'q': cmd = SHUT_DOWN; break;
+//      case 'd': cmd = TURN_LEFT; break;
 //		}
 //	}else if( mode=='h' )  //红外
 //	{
 //		//红外循迹代码
 //		num1 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR) & 0x000f;
-////		printf("%d\n", num1);
+//		printf("%d\n", num1);
 //		num2 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR+4) & 0x000f;
-////		printf("%d\n", num2);
+//		printf("%d\n", num2);
 //		num3 = Xil_In32(XPAR_SENSOR_V1_0_0_BASEADDR+8) & 0x000f ;
-////		printf("%d\n", num3);
+//		printf("%d\n", num3);
 //		//特殊情况
 //
 //		if(num3==0 && num2==1 && num1==0)
 //		{
 //			cmd = START_UP;
+//			printf("前进\n");
 //		}
 //		else if((num1==0 && num2==0) || (num2==1 && num3==1) )
 //		{
 //			cmd = TURN_LEFT;
+//			printf("右转\n");
 //		}
 //		else if((num3==0 && num2==0) || (num1==1 && num2==1))
 //		{
 //			cmd = TURN_RIGHT;
+//			printf("左转\n");
 //		}
 //		else if(num1==0 && num2==0 && num3==0)
 //		{
 //			cmd = BACK_UP;
+//			printf("后退\n");
 //		}
 //		else
 //		{
 //			cmd = SHUT_DOWN;
+//			printf("停止\n");
 //		}
 //
 //
@@ -163,123 +169,7 @@
 //
 //			//*ult_data_0 > 1900
 //			//带着正确的、正和左出去，沿着障碍物左边走
-////		}
 //
-////		if(*ult_data_2 > 100 && *ult_data_2 <300 && *ult_data_1 > 222)
-////		{
-////			cmd = START_UP;
-////			goto LOOP;
-////		}
-////
-////		if(*ult_data_2 > 100 && *ult_data_2 <300 && *ult_data_1 < 222)
-////		{
-////			cmd = TURN_LEFT;
-////			goto LOOP;
-////		}
-////
-////		if(*ult_data_0 > 1900)  //正面和左边数值有效
-////		{
-////
-////			if(*ult_data_2 > 100 && *ult_data_2 < 300 )
-////			{
-////				if(*ult_data_0 > 222)
-////				{
-////					cmd = START_UP;
-////				}
-////				else
-////				{
-////					cmd = TURN_LEFT;
-////				}
-////			}
-////
-////            if(*ult_data_2 > 300 )
-////            {
-////            	cmd = TURN_RIGHT;
-////
-////            }
-////
-////            if(*ult_data_2 < 100)
-////            {
-////            	cmd = TURN_LEFT;
-////            }
-////		}
-////		else
-////		{
-////			cmd = TURN_AROUND;
-////		}
-//
-////		if(*ult_data_1 > 222 && *ult_data_2 > 100  && *ult_data_2 < 500 && *ult_data_0 >1900)
-////		{
-////			cmd = START_UP;
-////			printf("go\n");
-////		}
-////		else if(*ult_data_1 > 222 && *ult_data_2 < 100 && *ult_data_0 >1900)
-////		{
-////			cmd = TURN_LEFT;
-////			printf("left\n");
-////		}
-////		else if(*ult_data_1 > 222 && *ult_data_2 >500  && *ult_data_0 >1900)
-////		{
-////			cmd = TURN_RIGHT;
-////			printf("right\n");
-////		}
-////		else if(*ult_data_1 < 222 && *ult_data_0 > 1900 )
-////		{
-////			cmd = TURN_LEFT;
-////			printf("left\n");
-////		}
-//////		else if(*ult_data_0 < 1850 && *ult_data_1 < 222 )
-//////		{
-//////			cmd = TURN_AROUND;
-//////			printf("around\n");
-//////		}
-////		else {
-////			cmd = TURN_AROUND;
-////			printf("around\n");
-////		}
-//
-////       超声波数据判断
-////		if( 222 < *ult_data_1 && 100 < *ult_data_0 && 100 < *ult_data_2) //前左右无障碍物 - 直走
-////		{
-////			cmd = START_UP;
-////			printf("go\n");
-////			printf("%f mm0 右\n",*ult_data_0);
-////			printf("%f mm1正\n",*ult_data_1);
-////			printf("%f mm2左\n",*ult_data_2);
-////		}
-////		else if( *ult_data_1 > 222 && *ult_data_0 < 150)  //靠近右边障碍物 - 左转
-////		{
-////			cmd = TURN_RIGHT;
-////			printf("right\n");
-////			printf("%f mm0 右\n",*ult_data_0);
-////			printf("%f mm1正\n",*ult_data_1);
-////			printf("%f mm2左\n",*ult_data_2);
-////		}
-////		else if( *ult_data_1 > 222  && *ult_data_2 < 100 )  //靠近左边障碍物 - 右转
-////		{
-////			cmd = TURN_LEFT;
-////			printf("left\n");
-////			printf("%f mm0 右\n",*ult_data_0);
-////			printf("%f mm1正\n",*ult_data_1);
-////			printf("%f mm2左\n",*ult_data_2);
-////		}
-////		else if(*ult_data_1 < 222 && *ult_data_0 < 150 &&  *ult_data_2 < 100)
-////		{
-////			cmd = TURN_AROUND;
-////			printf("around\n");
-////			printf("%f mm0 右\n",*ult_data_0);
-////			printf("%f mm1正\n",*ult_data_1);
-////			printf("%f mm2左\n",*ult_data_2);
-////		}
-////		else if(*ult_data_1 < 222 )
-////		{
-////			cmd = TURN_AROUND;
-////
-////		}
-////		else
-////		{
-////			cmd = START_UP;
-////		}
 //
 //	}
 //
@@ -363,9 +253,9 @@
 //
 //   return 0;
 //}
+//
 
-
-////蓝牙模块
+////蓝牙功能
 //int main(){
 //	char num;
 //	int mode;
@@ -381,12 +271,40 @@
 //		num=XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
 //		printf("%c\n",num);
 //		switch(num){
-//				case 'q':mode=0;break;
-//				case 'w':mode=6;break; //前进
-//				case 's':mode=9;break; //后退
-//				case 'a':mode=2;break; //左转
-//				case 'd':mode=4;break; //右转
-//				default:mode=10;break;
+//		case 'q':
+//			{
+//				mode=0;
+//				printf("停止\n");
+//				break;
+//			}
+//		case 'w':
+//			{
+//				mode=6;
+//				printf("前进\n");
+//				break; //前进
+//			}
+//		case 's':
+//			{
+//				mode=9;
+//				printf("后退\n");
+//				break; //后退
+//			}
+//		case 'a':
+//			{
+//				mode=2;
+//				printf("左转\n");
+//				break; //左转
+//			}
+//		case 'd':
+//			{
+//				mode=4;
+//				printf("右转\n");
+//				break; //右转
+//			}
+//		default:
+//			{
+//				mode=10;break;
+//			}
 //				}
 //
 //	    usleep(1000);    //delay lms
@@ -396,16 +314,20 @@
 //}
 
 
+
+
+
+//U型车 - 2 - test
 int main()
 {
 	int mode;
     int i = 0;
 
 	//Ultrasonic Initiation
-zrcar_ultra_init();
-float *ult_data_0 = (float*)malloc(sizeof(float)); *ult_data_0 = 0;
-float *ult_data_1 = (float*)malloc(sizeof(float)); *ult_data_1 = 0;
-float *ult_data_2 = (float*)malloc(sizeof(float)); *ult_data_2 = 0;
+	zrcar_ultra_init();
+	float *ult_data_0 = (float*)malloc(sizeof(float)); *ult_data_0 = 0;
+	float *ult_data_1 = (float*)malloc(sizeof(float)); *ult_data_1 = 0;
+	float *ult_data_2 = (float*)malloc(sizeof(float)); *ult_data_2 = 0;
 	Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR,1400);   //pwm fre
 	Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+4,500); //pwm wav
 	Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+8,1400);  //pwm1 fre
@@ -415,14 +337,14 @@ float *ult_data_2 = (float*)malloc(sizeof(float)); *ult_data_2 = 0;
 	{
 		if(i % 300 == 1){
 		//usleep(2000);
-		zrcar_ultra_get_all_0(ult_data_0);  //右边
+//		zrcar_ultra_get_all_0(ult_data_0);  //右边
 
 		zrcar_ultra_get_all_1(ult_data_1);  //正面
 
 		zrcar_ultra_get_all_2(ult_data_2);  //左边
 
 		printf("%f mm1正\n",*ult_data_1);
-		printf("%f mm0 右\n",*ult_data_0);
+	//	printf("%f mm0 右\n",*ult_data_0);
 		printf("%f mm2左\n",*ult_data_2);
 
 	   if(*ult_data_1 > 3 || *ult_data_2 >3)
@@ -439,20 +361,19 @@ float *ult_data_2 = (float*)malloc(sizeof(float)); *ult_data_2 = 0;
 				printf("go\n");
 			}
 
-			else if(*ult_data_2 > 1000)
+			else if(*ult_data_2 > 600 && *ult_data_1<400)    //*ult_data_1<300  //*ult_data_2 > 500
 			{
-				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR,1500);   //pwm fre
-				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+4,1000); //pwm wav
-				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+8,1500);  //pwm1 fre
-				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+12,458);  //pwm1 wav
+				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR,1400);   //pwm fre
+				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+4,1200); //pwm wav
+				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+8,1400);  //pwm1 fre
+				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+12,500);  //pwm1 wav
 				mode = 2;
 				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+16,mode);  //根据开关值控制电机转动
 
-				printf("right\n");
+				printf("左转\n");
 			}
 
-
-			else if((*ult_data_1 < 400 && *ult_data_2 < 1300) )
+			else if((*ult_data_1 < 450 && *ult_data_2 < 1300) )  //*ult_data_1 < 400
 			{
 				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR,1400);   //pwm fre
 				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+4,500); //pwm wav
@@ -460,20 +381,16 @@ float *ult_data_2 = (float*)malloc(sizeof(float)); *ult_data_2 = 0;
 				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+12,1200);  //pwm1 wav
 				mode = 4;
 				Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+16,mode);  //根据开关值控制电机转动
-				printf("left\n");
+				printf("右转\n");
 			}
-
 			else
 			{
 				mode = 6;
 			}
-
 		   }
-
 	   //     usleep(1000);    //delay lms
 	   	    Xil_Out32(XPAR_PWM_CAR_V1_0_0_BASEADDR+16,mode);  //根据开关值控制电机转动
 	  // 	 usleep(10000);
-
     	}
 
 
@@ -482,10 +399,7 @@ float *ult_data_2 = (float*)malloc(sizeof(float)); *ult_data_2 = 0;
 			//Reset in order to avoid overstep the Integer boundary
 			i = 0;
 		}
-
-
 	}
-
 	return XST_SUCCESS;
 }
 

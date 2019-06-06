@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu May 30 16:34:48 2019
+# Process ID: 8512
+# Log file: C:/Users/asus/Desktop/2016级硬件综合课设（第四组）/1、Vivado工程/Sensor/vivado.log
+# Journal file: C:/Users/asus/Desktop/2016级硬件综合课设（第四组）/1、Vivado工程/Sensor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/asus/Desktop/2016级硬件综合课设（第四组）/1、Vivado工程/Sensor/Sensor.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/asus/Desktop/si/Sensor' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/asus/Desktop/2016级硬件综合课设（第四组）/1、Vivado工程/ip_repo/Sensor/Sensor_1.0'; using path 'C:/Users/asus/Desktop/si/ip_repo/Sensor/Sensor_1.0' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/asus/Desktop/si/ip_repo/Sensor/Sensor_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 757.426 ; gain = 172.531
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 30 16:37:35 2019...

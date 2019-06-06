@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]C:\Users\bjut\Desktop\bluetooth_ps\bluetooth_ps\bluetooth_ps.sdk\fsbl_zynq\Debug\fsbl_zynq.elf
+	C:\Users\bjut\Desktop\bluetooth_ps\bluetooth_ps\bluetooth_ps.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit
+	C:\Users\bjut\Desktop\bluetooth_ps\bluetooth_ps\bluetooth_ps.sdk\by\Debug\by.elf
+}

@@ -1,0 +1,1330 @@
+17:30:19 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+17:30:33 INFO  : XSDB server has started successfully.
+17:30:34 INFO  : Processing command line option -hwspec C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper.hdf.
+17:39:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:39:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:39:44 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:39:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:39:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:39:58 INFO  : 'fpga -state' command is executed.
+17:39:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:39:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:40:02 INFO  : Mermory regions for PS have been updated.
+17:40:02 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:40:03 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:40:03 INFO  : 'ps7_init' command is executed.
+17:40:03 INFO  : 'ps7_post_config' command is executed.
+17:40:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:40:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:40:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:40:04 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:40:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+17:40:04 INFO  : Memory regions updated for context APU
+17:40:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:40:05 INFO  : 'con' command is executed.
+17:40:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+17:41:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:41:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:41:46 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:41:53 INFO  : Disconnected from the channel tcfchan#1.
+17:41:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:41:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:41:54 INFO  : 'fpga -state' command is executed.
+17:41:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:41:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:41:58 INFO  : Mermory regions for PS have been updated.
+17:41:58 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:41:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:41:58 INFO  : 'ps7_init' command is executed.
+17:41:59 INFO  : 'ps7_post_config' command is executed.
+17:41:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:41:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:41:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:42:00 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:42:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+17:42:00 INFO  : Memory regions updated for context APU
+17:42:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:42:00 INFO  : 'con' command is executed.
+17:42:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+17:44:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:44:06 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:44:12 INFO  : Disconnected from the channel tcfchan#2.
+17:44:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:44:13 INFO  : 'fpga -state' command is executed.
+17:44:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:44:17 INFO  : Mermory regions for PS have been updated.
+17:44:17 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:44:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:44:18 ERROR : Cannot halt processor core, timeout
+17:44:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+----------------End of Script----------------
+
+17:44:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:44:22 INFO  : 'fpga -state' command is executed.
+17:44:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:23 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:44:26 INFO  : Mermory regions for PS have been updated.
+17:44:26 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:44:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:44:27 ERROR : Cannot halt processor core, timeout
+17:44:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+----------------End of Script----------------
+
+17:44:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:44:53 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:44:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:44:58 INFO  : 'fpga -state' command is executed.
+17:44:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:45:02 INFO  : Mermory regions for PS have been updated.
+17:45:02 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:45:02 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:45:03 INFO  : 'ps7_init' command is executed.
+17:45:03 INFO  : 'ps7_post_config' command is executed.
+17:45:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:45:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:45:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:45:04 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:45:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+17:45:04 INFO  : Memory regions updated for context APU
+17:45:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:45:04 INFO  : 'con' command is executed.
+17:45:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+17:45:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:45:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:45:54 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:46:08 INFO  : Disconnected from the channel tcfchan#3.
+17:46:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:46:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:46:08 INFO  : 'fpga -state' command is executed.
+17:46:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:46:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:46:12 INFO  : Mermory regions for PS have been updated.
+17:46:12 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:46:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:46:13 INFO  : 'ps7_init' command is executed.
+17:46:13 INFO  : 'ps7_post_config' command is executed.
+17:46:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:46:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:46:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:46:14 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:46:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+17:46:14 INFO  : Memory regions updated for context APU
+17:46:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:46:15 INFO  : 'con' command is executed.
+17:46:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+17:47:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:47:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:47:10 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:47:17 INFO  : Disconnected from the channel tcfchan#4.
+17:47:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:47:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:47:17 INFO  : 'fpga -state' command is executed.
+17:47:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:47:18 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:47:21 INFO  : Mermory regions for PS have been updated.
+17:47:21 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:47:22 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:47:22 INFO  : 'ps7_init' command is executed.
+17:47:22 INFO  : 'ps7_post_config' command is executed.
+17:47:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:47:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:47:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:47:23 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:47:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+17:47:23 INFO  : Memory regions updated for context APU
+17:47:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:47:24 INFO  : 'con' command is executed.
+17:47:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+17:48:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:48:41 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:48:51 INFO  : Disconnected from the channel tcfchan#5.
+17:48:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:48:51 INFO  : 'fpga -state' command is executed.
+17:48:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:48:55 INFO  : Mermory regions for PS have been updated.
+17:48:55 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:48:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:48:56 INFO  : 'ps7_init' command is executed.
+17:48:56 INFO  : 'ps7_post_config' command is executed.
+17:48:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:48:57 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:48:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:48:57 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:48:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+17:48:57 INFO  : Memory regions updated for context APU
+17:48:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:48:57 INFO  : 'con' command is executed.
+17:48:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+17:49:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:49:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:49:45 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:49:51 INFO  : Disconnected from the channel tcfchan#6.
+17:49:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:49:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:49:51 INFO  : 'fpga -state' command is executed.
+17:49:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:49:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:49:55 INFO  : Mermory regions for PS have been updated.
+17:49:56 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:49:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:49:56 INFO  : 'ps7_init' command is executed.
+17:49:56 INFO  : 'ps7_post_config' command is executed.
+17:49:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:49:57 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:49:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:49:57 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:49:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+17:49:57 INFO  : Memory regions updated for context APU
+17:49:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:49:58 INFO  : 'con' command is executed.
+17:49:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+17:57:55 INFO  : Disconnected from the channel tcfchan#7.
+17:58:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:58:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+17:58:45 INFO  : 'fpga -state' command is executed.
+17:58:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:58:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:58:52 INFO  : Mermory regions for PS have been updated.
+17:58:52 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:58:53 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+17:58:53 INFO  : 'ps7_init' command is executed.
+17:58:53 INFO  : 'ps7_post_config' command is executed.
+17:58:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:58:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:58:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:58:55 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:58:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+17:58:55 INFO  : Memory regions updated for context APU
+17:58:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:58:55 INFO  : 'con' command is executed.
+17:58:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+18:00:10 INFO  : Disconnected from the channel tcfchan#8.
+18:00:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:00:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:00:11 INFO  : 'fpga -state' command is executed.
+18:00:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:00:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:00:18 INFO  : Mermory regions for PS have been updated.
+18:00:18 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:00:18 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:02:31 ERROR : Cannot halt processor core, timeout
+18:02:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+----------------End of Script----------------
+
+18:02:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:02:33 INFO  : 'fpga -state' command is executed.
+18:02:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:02:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:02:37 INFO  : 'fpga -state' command is executed.
+18:02:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:02:39 INFO  : Mermory regions for PS have been updated.
+18:02:39 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:02:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:03:12 ERROR : Cannot flush JTAG server queue. FT_Write failed: io error
+18:03:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+----------------End of Script----------------
+
+18:03:15 INFO  : Mermory regions for PS have been updated.
+18:03:15 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:03:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+----------------End of Script----------------
+
+18:03:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:03:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:03:36 INFO  : 'fpga -state' command is executed.
+18:03:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:03:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:03:50 INFO  : Mermory regions for PS have been updated.
+18:03:50 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:03:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:03:51 INFO  : 'ps7_init' command is executed.
+18:03:51 INFO  : 'ps7_post_config' command is executed.
+18:03:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:03:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:03:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:03:52 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:03:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+18:03:52 INFO  : Memory regions updated for context APU
+18:03:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:03:52 INFO  : 'con' command is executed.
+18:03:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+18:05:26 INFO  : Disconnected from the channel tcfchan#9.
+18:05:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:05:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:05:27 INFO  : 'fpga -state' command is executed.
+18:06:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:06:42 INFO  : Mermory regions for PS have been updated.
+18:06:42 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:06:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:06:43 ERROR : Cannot halt processor core, timeout
+18:06:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+----------------End of Script----------------
+
+18:06:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:06:53 INFO  : 'fpga -state' command is executed.
+18:06:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:06:58 INFO  : Mermory regions for PS have been updated.
+18:06:59 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:06:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:06:59 ERROR : Cannot halt processor core, timeout
+18:06:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+----------------End of Script----------------
+
+18:07:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:07:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:07:04 INFO  : 'fpga -state' command is executed.
+18:08:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:08:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:08:10 INFO  : 'fpga -state' command is executed.
+18:08:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:08:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:08:17 INFO  : Mermory regions for PS have been updated.
+18:08:17 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:08:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:08:18 ERROR : Cannot halt processor core, timeout
+18:08:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+----------------End of Script----------------
+
+18:08:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:08:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:08:35 INFO  : 'fpga -state' command is executed.
+18:08:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:08:57 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:09:01 INFO  : Mermory regions for PS have been updated.
+18:09:01 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:09:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:09:01 INFO  : 'ps7_init' command is executed.
+18:09:02 INFO  : 'ps7_post_config' command is executed.
+18:09:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:09:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:09:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:09:03 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:09:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+18:09:03 INFO  : Memory regions updated for context APU
+18:09:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:09:03 INFO  : 'con' command is executed.
+18:09:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+18:11:59 INFO  : Disconnected from the channel tcfchan#10.
+18:12:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:12:00 INFO  : 'fpga -state' command is executed.
+18:12:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:12:14 INFO  : Mermory regions for PS have been updated.
+18:12:14 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:12:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:12:15 ERROR : Cannot halt processor core, timeout
+18:12:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+----------------End of Script----------------
+
+18:12:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:12:39 INFO  : 'fpga -state' command is executed.
+18:12:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:12:48 INFO  : 'fpga -state' command is executed.
+18:13:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:13:03 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:13:06 INFO  : Mermory regions for PS have been updated.
+18:13:07 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:13:07 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:13:07 INFO  : 'ps7_init' command is executed.
+18:13:07 INFO  : 'ps7_post_config' command is executed.
+18:13:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:13:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:08 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:13:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+18:13:08 INFO  : Memory regions updated for context APU
+18:13:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:09 INFO  : 'con' command is executed.
+18:13:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+18:15:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:15:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:15:11 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:15:18 INFO  : Disconnected from the channel tcfchan#11.
+18:15:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:15:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+18:15:19 INFO  : 'fpga -state' command is executed.
+18:15:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:15:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:15:23 INFO  : Mermory regions for PS have been updated.
+18:15:23 INFO  : Sourcing of 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:15:23 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+18:15:24 INFO  : 'ps7_init' command is executed.
+18:15:24 INFO  : 'ps7_post_config' command is executed.
+18:15:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:15:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:15:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:15:25 INFO  : The application 'C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:15:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.sdk/hw/Debug/hw.elf
+----------------End of Script----------------
+
+18:15:25 INFO  : Memory regions updated for context APU
+18:15:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:15:25 INFO  : 'con' command is executed.
+18:15:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+

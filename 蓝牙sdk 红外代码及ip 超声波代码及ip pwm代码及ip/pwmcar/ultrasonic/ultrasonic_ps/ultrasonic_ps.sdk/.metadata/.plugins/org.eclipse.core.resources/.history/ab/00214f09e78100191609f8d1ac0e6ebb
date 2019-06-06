@@ -1,0 +1,53 @@
+/*
+ * main.c
+ *
+ *  Created on: 2018Äê5ÔÂ11ÈÕ
+ *      Author: Lab
+ */
+
+
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xil_io.h"
+#include "unistd.h"
+#include "xil_types.h"
+
+#include "xgpiops.h"
+#include "xuartps.h"
+#include "string.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+
+#include "xil_printf.h"
+#include "ult.h"
+
+int main()
+{
+
+	int i = 0;
+
+//Ultrasonic Initiation
+zrcar_ultra_init();
+float *ult_data=0;
+
+    while(1){
+
+	//Every 222 ticks get an ultra data
+	if(i % 222 == 1){
+		zrcar_ultra_get_all(ult_data);
+		printf("%f mm\n",*ult_data);
+	}
+
+	i++;
+		if(i>100000){
+			//Reset in order to avoid overstep the Integer boundary
+			i = 0;
+		}
+
+
+   }
+
+return 0;
+}
+

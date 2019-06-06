@@ -1,0 +1,84 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 3044
+
+Current time: 	5/29/19 2:21:06 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1440x900
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	bjut
+User directory: C:/Users/bjut/Desktop/ip_repo/pwm_car
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/bjut/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/bjut/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	178 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 439 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\bjut\Desktop\ip_repo\pwm_car\edit_pwm_car_v1_0.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/bjut/Desktop/ip_repo/pwm_car/edit_pwm_car_v1_0.xpr 
+// [GUI Memory]: 29 MB (+27462kb) [00:00:05]
+// [Engine Memory]: 398 MB (+265767kb) [00:00:05]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 36 MB (+6702kb) [00:00:05]
+// [GUI Memory]: 46 MB (+7881kb) [00:00:06]
+// [Engine Memory]: 427 MB (+9139kb) [00:00:06]
+// [GUI Memory]: 48 MB (+349kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/bjut/Desktop/ip_repo/pwm_car/edit_pwm_car_v1_0.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/ip_repo/pwm_car/pwm_car_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/ip_repo/pwm_car/pwm_car_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/ip_repo/pwm_car/pwm_car_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 53 MB (+1917kb) [00:00:08]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 444 MB. GUI used memory: 31 MB. Current time: 5/29/19 2:21:07 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: edit_pwm_car_v1_0; location: C:/Users/bjut/Desktop/ip_repo/pwm_car; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 710.648 ; gain = 125.598 
+// [Engine Memory]: 448 MB (+535kb) [00:00:09]
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_car_v1_0 (pwm_car_v1_0.v)]", 1); // A:k (H:JPanel, cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_car_v1_0 (pwm_car_v1_0.v), pwm_car_v1_0_S00_AXI_inst - pwm_car_v1_0_S00_AXI (pwm_car_v1_0_S00_AXI.v)]", 2); // A:k (H:JPanel, cl:JFrame)
+// PAPropertyPanels.initPanels (pwm_car_v1_0_S00_AXI.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_car_v1_0 (pwm_car_v1_0.v), pwm_car_v1_0_S00_AXI_inst - pwm_car_v1_0_S00_AXI (pwm_car_v1_0_S00_AXI.v)]", 2, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_car_v1_0 (pwm_car_v1_0.v), pwm_car_v1_0_S00_AXI_inst - pwm_car_v1_0_S00_AXI (pwm_car_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+// [GUI Memory]: 58 MB (+2404kb) [00:00:56]
+// [Engine Memory]: 474 MB (+3649kb) [00:01:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 474 MB. GUI used memory: 32 MB. Current time: 5/29/19 2:22:02 PM CST

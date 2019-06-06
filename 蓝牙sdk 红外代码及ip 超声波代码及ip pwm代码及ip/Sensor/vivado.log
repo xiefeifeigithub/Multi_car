@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri May 31 16:47:28 2019
+# Process ID: 1332
+# Log file: C:/Users/bjut/Desktop/Sensor/vivado.log
+# Journal file: C:/Users/bjut/Desktop/Sensor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bjut/Desktop/Sensor/Sensor.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/asus/Desktop/si/Sensor' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/bjut/Desktop/ip_repo/Sensor/Sensor_1.0', nor could it be found using path 'C:/Users/asus/Desktop/si/ip_repo/Sensor/Sensor_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/bjut/Desktop/ip_repo/Sensor/Sensor_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 733.656 ; gain = 157.480
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 18:54:08 2019...
