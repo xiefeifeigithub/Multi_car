@@ -1,0 +1,30 @@
+nt maxOccurs="1" minOccurs="0" name="Link5" type="PathType" wcm:legacyName="WCOEM5" wcm:legacyType="REG_EXPAND_SZ" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="Link6" type="PathType" wcm:legacyName="WCOEM6" wcm:legacyType="REG_EXPAND_SZ" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="Link7" type="PathType" wcm:legacyName="WCOEM7" wcm:legacyType="REG_EXPAND_SZ" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="Link8" type="PathType" wcm:legacyName="WCOEM8" wcm:legacyType="REG_EXPAND_SZ" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="Link9" type="PathType" wcm:legacyName="WCOEM9" wcm:legacyType="REG_EXPAND_SZ" />
+          </xsd:sequence>
+        </xsd:complexType>
+        <xsd:complexType name="ThemesType">
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="DefaultThemesOff" type="xsd:boolean" wcm:legacyName="NoThemeInstall" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="CustomDefaultThemeFile" type="PathType" wcm:deprecated="This setting is deprecated and should not be used." wcm:legacyName="CustomInstallTheme" wcm:legacyType="REG_EXPAND_SZ" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="ThemeName" type="NameType" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="DesktopBackground" type="PathType" wcm:legacyType="REG_EXPAND_SZ" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="BrandIcon" type="PathType" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="WindowColor" type="NameType" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="ScreenSaver" type="NameType" />
+          </xsd:sequence>
+        </xsd:complexType>
+        <xsd:complexType name="LocalAccountType">
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Name" type="UsernameType" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="DisplayName" type="NameType" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="Description" type="DescriptionType" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="Password" type="PasswordType" />
+            <xsd:element maxOccurs="1" minOccurs="0" name="Group" type="NameType" />
+          </xsd:sequence>
+        </xsd:complexType>
+        <xsd:complexType name="LocalAccountListType">
+          <xsd:sequence>
+            <xsd:element maxOccur

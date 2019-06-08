@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed May 08 16:44:37 2019
+# Process ID: 2132
+# Log file: C:/Users/bjut/Desktop/pwm_ps/vivado.log
+# Journal file: C:/Users/bjut/Desktop/pwm_ps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bjut/Desktop/pwm_ps/pwm_ps.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 718.082 ; gain = 130.141
+launch_sdk -workspace C:/Users/bjut/Desktop/pwm_ps/pwm_ps.sdk -hwspec C:/Users/bjut/Desktop/pwm_ps/pwm_ps.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/bjut/Desktop/pwm_ps/pwm_ps.sdk -hwspec C:/Users/bjut/Desktop/pwm_ps/pwm_ps.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file mkdir C:/Users/bjut/Desktop/pwm_ps/pwm_ps.sdk
+file copy -force C:/Users/bjut/Desktop/pwm_ps/pwm_ps.runs/impl_1/design_1_wrapper.sysdef C:/Users/bjut/Desktop/pwm_ps/pwm_ps.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/bjut/Desktop/pwm_ps/pwm_ps.sdk -hwspec C:/Users/bjut/Desktop/pwm_ps/pwm_ps.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/bjut/Desktop/pwm_ps/pwm_ps.sdk -hwspec C:/Users/bjut/Desktop/pwm_ps/pwm_ps.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.

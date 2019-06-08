@@ -1,0 +1,787 @@
+09:00:41 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+09:00:42 INFO  : XSDB server has started successfully.
+09:00:42 INFO  : Processing command line option -hwspec C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper.hdf.
+10:15:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:15:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:15:42 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:17:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:17:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:17:52 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:18:11 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+10:18:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:18:16 INFO  : 'fpga -state' command is executed.
+10:18:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:18:20 INFO  : Mermory regions for PS have been updated.
+10:18:20 INFO  : Sourcing of 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:18:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:18:21 INFO  : 'ps7_init' command is executed.
+10:18:21 INFO  : 'ps7_post_config' command is executed.
+10:18:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:18:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:23 INFO  : The application 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:18:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf
+----------------End of Script----------------
+
+10:18:23 INFO  : Memory regions updated for context APU
+10:18:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:23 INFO  : 'con' command is executed.
+10:18:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:19:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:19:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:19:17 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:19:38 INFO  : Disconnected from the channel tcfchan#1.
+10:19:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:19:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:19:39 INFO  : 'fpga -state' command is executed.
+10:19:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:19:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:19:43 INFO  : Mermory regions for PS have been updated.
+10:19:43 INFO  : Sourcing of 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:19:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:19:44 INFO  : 'ps7_init' command is executed.
+10:19:44 INFO  : 'ps7_post_config' command is executed.
+10:19:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:19:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:19:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:19:45 INFO  : The application 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:19:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf
+----------------End of Script----------------
+
+10:19:45 INFO  : Memory regions updated for context APU
+10:19:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:19:45 INFO  : 'con' command is executed.
+10:19:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:26:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:27:00 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:27:05 INFO  : Disconnected from the channel tcfchan#2.
+10:27:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:27:06 INFO  : 'fpga -state' command is executed.
+10:27:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:06 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:27:10 INFO  : Mermory regions for PS have been updated.
+10:27:10 INFO  : Sourcing of 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:27:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:27:11 INFO  : 'ps7_init' command is executed.
+10:27:11 INFO  : 'ps7_post_config' command is executed.
+10:27:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:27:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:27:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:27:12 INFO  : The application 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:27:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf
+----------------End of Script----------------
+
+10:27:12 INFO  : Memory regions updated for context APU
+10:27:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:27:12 INFO  : 'con' command is executed.
+10:27:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:30:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:30:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:30:29 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:31:30 INFO  : Disconnected from the channel tcfchan#3.
+10:31:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:31:30 INFO  : 'fpga -state' command is executed.
+10:31:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:31:36 INFO  : Mermory regions for PS have been updated.
+10:31:36 INFO  : Sourcing of 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:31:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:31:37 INFO  : 'ps7_init' command is executed.
+10:31:37 INFO  : 'ps7_post_config' command is executed.
+10:31:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:31:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:38 INFO  : The application 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:31:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf
+----------------End of Script----------------
+
+10:31:38 INFO  : Memory regions updated for context APU
+10:31:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:38 INFO  : 'con' command is executed.
+10:31:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:31:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:31:47 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:32:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:32:09 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:32:18 INFO  : Disconnected from the channel tcfchan#4.
+10:32:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:32:19 INFO  : 'fpga -state' command is executed.
+10:32:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:32:22 INFO  : Mermory regions for PS have been updated.
+10:32:23 INFO  : Sourcing of 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:32:23 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:32:23 ERROR : Cannot halt processor core, timeout
+10:32:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+----------------End of Script----------------
+
+10:32:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:32:29 INFO  : 'fpga -state' command is executed.
+10:32:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:32:33 INFO  : Mermory regions for PS have been updated.
+10:32:33 INFO  : Sourcing of 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:32:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:32:34 ERROR : Cannot halt processor core, timeout
+10:32:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+----------------End of Script----------------
+
+10:32:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:32:54 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:33:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:33:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:33:01 INFO  : 'fpga -state' command is executed.
+10:33:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:33:02 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:33:05 INFO  : Mermory regions for PS have been updated.
+10:33:05 INFO  : Sourcing of 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:33:06 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:33:06 INFO  : 'ps7_init' command is executed.
+10:33:06 INFO  : 'ps7_post_config' command is executed.
+10:33:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:33:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:07 INFO  : The application 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:33:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf
+----------------End of Script----------------
+
+10:33:07 INFO  : Memory regions updated for context APU
+10:33:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:07 INFO  : 'con' command is executed.
+10:33:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:39:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:39:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:39:51 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:39:59 INFO  : Disconnected from the channel tcfchan#5.
+10:40:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:40:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:40:00 INFO  : 'fpga -state' command is executed.
+10:40:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:40:00 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:40:04 INFO  : Mermory regions for PS have been updated.
+10:40:04 INFO  : Sourcing of 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:40:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:40:05 INFO  : 'ps7_init' command is executed.
+10:40:05 INFO  : 'ps7_post_config' command is executed.
+10:40:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:40:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:06 INFO  : The application 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:40:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf
+----------------End of Script----------------
+
+10:40:06 INFO  : Memory regions updated for context APU
+10:40:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:06 INFO  : 'con' command is executed.
+10:40:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:45:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:45:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:45:43 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:45:49 INFO  : Disconnected from the channel tcfchan#6.
+10:45:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:45:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:45:50 INFO  : 'fpga -state' command is executed.
+10:45:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:45:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:45:54 INFO  : Mermory regions for PS have been updated.
+10:45:54 INFO  : Sourcing of 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:45:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:45:55 INFO  : 'ps7_init' command is executed.
+10:45:55 INFO  : 'ps7_post_config' command is executed.
+10:45:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:45:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:56 INFO  : The application 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:45:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf
+----------------End of Script----------------
+
+10:45:56 INFO  : Memory regions updated for context APU
+10:45:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:56 INFO  : 'con' command is executed.
+10:45:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:47:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:47:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:47:48 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:48:14 INFO  : Disconnected from the channel tcfchan#7.
+10:48:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:48:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:48:19 INFO  : 'fpga -state' command is executed.
+10:48:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:48:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:48:23 INFO  : Mermory regions for PS have been updated.
+10:48:23 INFO  : Sourcing of 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:48:23 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:48:24 INFO  : 'ps7_init' command is executed.
+10:48:24 INFO  : 'ps7_post_config' command is executed.
+10:48:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:48:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:48:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:48:25 INFO  : The application 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:48:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf
+----------------End of Script----------------
+
+10:48:25 INFO  : Memory regions updated for context APU
+10:48:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:48:25 INFO  : 'con' command is executed.
+10:48:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:51:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:51:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:51:45 INFO  : FPGA configured successfully with bitstream "C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:51:55 INFO  : Disconnected from the channel tcfchan#8.
+10:51:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:51:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A" && level==0} -index 1' command is executed.
+10:51:55 INFO  : 'fpga -state' command is executed.
+10:51:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:51:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:51:59 INFO  : Mermory regions for PS have been updated.
+10:51:59 INFO  : Sourcing of 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:52:00 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0' command is executed.
+10:52:00 INFO  : 'ps7_init' command is executed.
+10:52:00 INFO  : 'ps7_post_config' command is executed.
+10:52:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:52:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:52:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:52:01 INFO  : The application 'C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:52:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+memmap -addr 1119879168 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 3758096384 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+source C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+dow C:/Users/bjut/Desktop/bluetooth_ps/bluetooth_ps/bluetooth_ps.sdk/by/Debug/by.elf
+----------------End of Script----------------
+
+10:52:02 INFO  : Memory regions updated for context APU
+10:52:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:52:02 INFO  : 'con' command is executed.
+10:52:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DA90A"} -index 0
+con
+----------------End of Script----------------
+
+10:59:33 INFO  : Invoking Bootgen: bootgen -image by.bif -o C:\Users\bjut\Desktop\bluetooth_ps\bluetooth_ps\bluetooth_ps.sdk\by\bootimage\BOOT.bin
+10:59:33 INFO  : Creating new bif file C:\Users\bjut\Desktop\bluetooth_ps\bluetooth_ps\bluetooth_ps.sdk\by\bootimage\by.bif
+10:59:34 INFO  : Bootgen command execution is done.
+13:07:59 INFO  : Disconnected from the channel tcfchan#9.
+13:08:03 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

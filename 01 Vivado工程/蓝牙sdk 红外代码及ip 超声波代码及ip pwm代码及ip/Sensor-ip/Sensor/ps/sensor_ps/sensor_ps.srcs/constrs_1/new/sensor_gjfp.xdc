@@ -1,0 +1,8 @@
+set_property PACKAGE_PIN U5 [get_ports in1]
+set_property PACKAGE_PIN V5 [get_ports in2]
+set_property PACKAGE_PIN V6 [get_ports in3]
+set_property PACKAGE_PIN U7 [get_ports in4]
+set_property IOSTANDARD LVCMOS33 [get_ports in4]
+set_property IOSTANDARD LVCMOS33 [get_ports in2]
+set_property IOSTANDARD LVCMOS33 [get_ports in1]
+set_property IOSTANDARD LVCMOS33 [get_ports in3]

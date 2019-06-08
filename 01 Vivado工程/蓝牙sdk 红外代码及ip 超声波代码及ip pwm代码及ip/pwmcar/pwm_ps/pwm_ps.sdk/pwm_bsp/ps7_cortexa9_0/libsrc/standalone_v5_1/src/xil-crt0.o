@@ -1,0 +1,35 @@
+r name="MissingResourceError" translate="yes">
+			<val>Se ha producido un error al descargar esta actualización. Salga e inténtelo de nuevo más tarde.</val>
+		</str>
+		<str name="HttpStatusError" translate="yes">
+			<val>Se han producido algunos errores durante la descarga. Inténtelo de nuevo más tarde.</val>
+		</str>
+		<str name="UnzipMountError" translate="yes">
+			<val>Se ha producido un error al instalar esta actualización. Salga e inténtelo de nuevo más tarde.</val>
+		</str>
+		<str name="FailureToMoveError" translate="yes">
+			<val>Se ha producido un error al instalar esta actualización. Salga e inténtelo de nuevo más tarde.</val>
+		</str>
+		<str name="ValidationFailureDownload" translate="yes">
+			<val>Se ha producido un error al descargar esta actualización. Salga e inténtelo de nuevo más tarde.</val>
+		</str>
+		<str name="ValidationFailureInstall" translate="yes">
+			<val>Se ha producido un error al instalar esta actualización. Salga e inténtelo de nuevo más tarde.</val>
+		</str>
+		<str name="InstallerAlreadyInUse" translate="yes">
+			<val>Se está ejecutando otra instancia del Actualizador. Inténtelo de nuevo más tarde.</val>
+		</str>
+		<str name="RIBSSetupAlreadyInUse" translate="yes">
+			<val>Ya está ejecutando Adobe Application Manager. Cierre todas las instancias de Adobe Application Manager para continuar con su instalación.</val>
+		</str>
+		<str name="notApplicableMsg" translate="yes">
+			<val>La actualización no es aplicable.</val>
+		</str>
+		<str name="suppressError" translate="yes">
+			<val>Póngase en contacto con su administrador si desea aplicar las actualizaciones en su equipo. El administrador ha suprimido las actualizaciones.</val>
+		</str>
+		<str name="agvErrorWarning" translate="yes">
+			<val>Fallo de verificación del software Adobe Genuine</val>
+		</str>
+		<str name="agvErrorText" translate="yes">
+			<val>El producto que intenta actualizar no es un software Adobe Genuine y parece ser un software fal

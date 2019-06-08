@@ -1,0 +1,33 @@
+{
+   guistr: "# # String gsaved with Nlview 6.4.12  2014-12-16 bk=1.3272 VDI=35 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 190 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 210 -defaultsOSRD
+preplace port trig -pg 1 -y 400 -defaultsOSRD
+preplace portBus dir_out -pg 1 -y 70 -defaultsOSRD
+preplace portBus echo -pg 1 -y 440 -defaultsOSRD
+preplace portBus PWM_o -pg 1 -y 50 -defaultsOSRD
+preplace inst pwm_car_v1_0_0 -pg 1 -lvl 1 -y 60 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 2 -y 270 -defaultsOSRD
+preplace inst ultrasonic_v1_0_0 -pg 1 -lvl 1 -y 450 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 3 -y 640 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 240 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 4 500 160 NJ 190 NJ 190 NJ
+preplace netloc echo_1 1 0 1 N
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 0 4 140 360 NJ 390 NJ 390 1200
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 NJ 180 900
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 540
+preplace netloc pwm_car_v1_0_0_dir_out 1 1 4 N 70 NJ 70 NJ 70 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 0 3 130 370 NJ 400 870
+preplace netloc ultrasonic_v1_0_0_trig 1 1 4 NJ 440 NJ 400 NJ 400 N
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 510 170 NJ 210 NJ 210 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 1 880
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 120 130 530 360 860
+preplace netloc pwm_car_v1_0_0_PWM_o 1 1 4 N 50 NJ 50 NJ 50 NJ
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 0 4 140 350 NJ 370 NJ 370 1210
+levelinfo -pg 1 100 320 700 1060 1230 1280
+",
+}
+{
+   da_axi4_cnt: "2",
+}

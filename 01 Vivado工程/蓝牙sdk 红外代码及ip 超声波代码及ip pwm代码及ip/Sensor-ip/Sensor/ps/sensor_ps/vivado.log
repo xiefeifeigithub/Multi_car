@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri May 31 17:52:04 2019
+# Process ID: 348
+# Log file: C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/vivado.log
+# Journal file: C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps/sensor_ps.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bjut/Desktop/Sensor-ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/bjut/Desktop/Sensor-ip' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'c:/Users/bjut/Desktop/Sensor-ip/Sensor/ps/sensor_ps'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 717.699 ; gain = 138.594
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 18:54:24 2019...
